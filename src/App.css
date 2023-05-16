@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-nav {
-  padding: 15px;
-}
-
-nav a {
-  margin: 15px;
-  font-size: 25px;
-  text-decoration: none;
-}
-
-.active {
-  color: red;
-  text-decoration: underline;
+.navbar-text a {
+  padding: 8px;
 }
