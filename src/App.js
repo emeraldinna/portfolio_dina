@@ -6,6 +6,7 @@ import Photography from './components/Photography';
 import Animation from './components/Animation';
 import About from './components/About';
 import Contact from './components/Contact';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -15,9 +16,11 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
             <Route path="photography" element={<Photography />} />
+            <Route path="photography/:genre" element={<Photography />} />
             <Route path="animation" element={<Animation />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </div>
