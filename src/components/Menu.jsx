@@ -1,4 +1,4 @@
-// import { NavLink } from "react-router-dom";
+import { LinkContainer } from 'react-router-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -15,23 +15,41 @@ const Menu = () => {
   return (
     <Navbar expand="lg" bg="light" variant="light" fixed="top">
         <Container>
-            <Navbar.Brand href="."> 
-                <h3>DINA BERKGAUT</h3>
-            </Navbar.Brand>
+            <LinkContainer to=".">
+                <Navbar.Brand> 
+                    <h3>DINA BERKGAUT</h3>
+                </Navbar.Brand>
+            </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end">
                 <Nav>
                     <NavDropdown title="Photography" id="basic-nav-dropdown">
-                        <NavDropdown.Item>People</NavDropdown.Item>
-                        <NavDropdown.Item>Events</NavDropdown.Item>
-                        <NavDropdown.Item>Places</NavDropdown.Item>
-                        <NavDropdown.Item>Assignments</NavDropdown.Item> 
+                        <LinkContainer to="photography/people">
+                            <NavDropdown.Item>People</NavDropdown.Item>
+                        </LinkContainer>
+                        <LinkContainer to="photography/events">
+                            <NavDropdown.Item>Events</NavDropdown.Item>
+                        </LinkContainer>
+                        <LinkContainer to="photography/places">
+                            <NavDropdown.Item>Places</NavDropdown.Item>
+                        </LinkContainer>
+                        <LinkContainer to="photography/assignments">
+                            <NavDropdown.Item>Assignments</NavDropdown.Item> 
+                        </LinkContainer>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="photography">All</NavDropdown.Item>
+                        <LinkContainer to="photography">
+                            <NavDropdown.Item>All</NavDropdown.Item>
+                        </LinkContainer>
                     </NavDropdown>
-                    <Nav.Link href="animation">Animation</Nav.Link>
-                    <Nav.Link href="about">About</Nav.Link>
-                    <Nav.Link href="contact">Contact</Nav.Link>
+                    <LinkContainer to="animation">
+                        <Nav.Link>Animation</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="about">
+                        <Nav.Link>About</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="contact">
+                        <Nav.Link>Contact</Nav.Link>
+                    </LinkContainer>
                     <Navbar.Text>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/dortndortn/">
                             <IconContext.Provider value={iconStyle}>
