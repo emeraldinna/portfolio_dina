@@ -1,7 +1,22 @@
+* {
+  background-color: #e9ecef;
+}
+
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-text a {
   padding: 8px;
+}
+
+.nav-item a {
+  padding: 4px 16px;
+}
+
+.nav {
+  padding-right: 0 !important;
 }

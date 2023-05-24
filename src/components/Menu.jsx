@@ -9,11 +9,11 @@ import { FaInstagramSquare } from 'react-icons/fa';
 import { FaVimeoSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 
-const iconStyle = {color: "red", size: "24px"}; 
+const iconStyle = {color: "black", size: "24px"}; 
 
 const Menu = () => {
   return (
-    <Navbar expand="lg" bg="light" variant="light" fixed="top">
+    <Navbar expand="lg" fixed="top" className="pb-5">
         <Container>
             <LinkContainer to=".">
                 <Navbar.Brand> 
@@ -23,7 +23,7 @@ const Menu = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end">
                 <Nav>
-                    <NavDropdown title="Photography" id="basic-nav-dropdown">
+                    <NavDropdown title="Photography" id="basic-nav-dropdown" className="py-1">
                         <LinkContainer to="photography/people">
                             <NavDropdown.Item>People</NavDropdown.Item>
                         </LinkContainer>
