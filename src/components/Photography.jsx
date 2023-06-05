@@ -1,8 +1,10 @@
+import Container from 'react-bootstrap/Container';
+
 const Photography = () => {
   return (
-    <div style={{marginTop: '250px'}}>
+    <Container>
         <h1>Photography</h1>
-    </div>
+    </Container>
   )
 }
 

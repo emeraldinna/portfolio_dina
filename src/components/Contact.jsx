@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 
 const Contact = () => {
   return (
-    <Container style={{ marginTop: '120px' }}>
+    <Container>
       <h1 className="text-uppercase fw-bold">Let's get in touch</h1>
       <p className="pb-5 fs-5 text fw-semibold">If you have any questions do not hesitate to contact me!</p>
       <Row>
