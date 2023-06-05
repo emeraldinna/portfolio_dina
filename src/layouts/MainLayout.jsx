@@ -2,13 +2,17 @@ import { Outlet } from "react-router-dom";
 import { Fragment } from "react";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
+import Container from 'react-bootstrap/Container';
 
 const MainLayout = () => {
+
   return (
     <Fragment>
-        <Menu />
+      <Menu />
+      <Container style={{marginTop: '150px'}}>
         <Outlet />
-        <Footer />
+      </Container>
+      <Footer />
     </Fragment>
   )
 }

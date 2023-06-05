@@ -1,8 +1,10 @@
+import Container from 'react-bootstrap/Container';
+
 const Home = () => {
   return (
-    <div style={{marginTop: '250px'}}>
+    <Container>
         <h1>Portfolio project for Dina Berkgaut</h1>
-    </div>
+    </Container>
   )
 }
 

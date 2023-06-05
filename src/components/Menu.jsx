@@ -13,7 +13,7 @@ const iconStyle = {color: "black", size: "24px"};
 
 const Menu = () => {
   return (
-    <Navbar expand="lg" fixed="top" className="pb-5">
+    <Navbar expand="lg" fixed="top" className="fixed-navbar">
         <Container>
             <LinkContainer to=".">
                 <Navbar.Brand> 

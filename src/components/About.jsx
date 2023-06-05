@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 
 const About = () => {
   return (
-    <Container style={{ marginTop: '150px', textAlign: 'left' }} className="text-left">
+    <Container style={{ textAlign: 'left' }}>
       <Row>
         <Col className="mb-5" xs={12} xl={4} md={6}>
           <Image src="/images/dina_about.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />

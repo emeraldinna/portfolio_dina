@@ -9,12 +9,12 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const iconStyle = {color: "black", size: "24px"};
 const styles = {
-    margin: "auto",
+    marginTop: "auto",
     position: "relative",
     bottom: "0",
     width: "100%"
 }
-
+ 
 const Footer = () => {
   return (
     <div style={styles} className="pt-5">
