@@ -15,15 +15,15 @@ const Menu = () => {
   return (
     <Navbar expand="lg" fixed="top" className="fixed-navbar">
         <Container>
-            <LinkContainer to=".">
+            <LinkContainer to="." style={{ fontFamily: 'Oswald-Bold', fontSize: '36px' }}>
                 <Navbar.Brand> 
-                    <h3>DINA BERKGAUT</h3>
+                   Dina Berkgaut
                 </Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end">
                 <Nav>
-                    <NavDropdown title="Photography" id="basic-nav-dropdown" className="py-1">
+                    <NavDropdown title="Photography" id="basic-nav-dropdown" className="py-1" style={{ fontFamily: 'Oswald-Medium' }}>
                         <LinkContainer to="photography/people">
                             <NavDropdown.Item>People</NavDropdown.Item>
                         </LinkContainer>
@@ -41,13 +41,13 @@ const Menu = () => {
                             <NavDropdown.Item>All</NavDropdown.Item>
                         </LinkContainer>
                     </NavDropdown>
-                    <LinkContainer to="animation">
+                    <LinkContainer to="animation" style={{ fontFamily: 'Oswald-Medium' }}>
                         <Nav.Link>Animation</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="about">
+                    <LinkContainer to="about" style={{ fontFamily: 'Oswald-Medium' }}>
                         <Nav.Link>About</Nav.Link>
                     </LinkContainer>
-                    <LinkContainer to="contact">
+                    <LinkContainer to="contact" style={{ fontFamily: 'Oswald-Medium' }}>
                         <Nav.Link>Contact</Nav.Link>
                     </LinkContainer>
                     <Navbar.Text>

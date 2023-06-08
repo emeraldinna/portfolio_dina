@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import Home from './components/Home';
 import './App.css';
+import './custom-styles.css';
 import Photography from './components/Photography';
 import Animation from './components/Animation';
 import About from './components/About';

@@ -8,8 +8,8 @@ import Image from 'react-bootstrap/Image';
 const Contact = () => {
   return (
     <Container>
-      <h1 className="text-uppercase fw-bold">Let's get in touch</h1>
-      <p className="pb-5 fs-5 text fw-semibold">If you have any questions do not hesitate to contact me!</p>
+      <h1 className="text-uppercase fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
+      <p className="pb-5 fs-5 text fw-semibold" style={{ fontFamily: 'Oswald-Light' }}>If you have any questions do not hesitate to contact me!</p>
       <Row>
         <Col className="mb-5" xs={12} xl={6} md={6}>
           <Image src="/images/dina_contacts.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
@@ -23,7 +23,7 @@ const Contact = () => {
               <Form.Control type="email" placeholder="Email" />
             </Form.Group>
             <Form.Select aria-label="Default select example" className="mb-3">
-              <option style={{ color: 'red' }}>Subject</option>
+              <option>Subject</option>
               <option value="phootography">Photography</option>
               <option value="animation">Animation</option>
               <option value="price">Send a price</option>

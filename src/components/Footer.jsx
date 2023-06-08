@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <div style={styles} className="pt-5">
         <Container>
-            <Row className="mb-3">
+            <Row className="mb-2">
                 <Nav className="justify-content-center">
                     <Nav.Item>
                         <Nav.Link target="_blank" href="https://www.linkedin.com/in/dinaberkgaut/">
@@ -52,13 +52,13 @@ const Footer = () => {
                 </Nav>
             </Row>
             <Row className="pb-0">
-                <p className="fs-5 fw-bold">test@gmail.com</p>
+                <p className="fs-5 mb-2" style={{ fontFamily: 'Oswald-Semibold' }}>test@gmail.com</p>
             </Row>
-            <Row className="pb-0">
-                <p>All works © Dina Berkgaut</p>
+            <Row style={{ fontFamily: 'Oswald-Light' }}>
+                <p className="pb-1 mb-0">All works © Dina Berkgaut</p>
             </Row>
-            <Row className="pb-0">
-                <p>Website created by Inna Dyachkova</p>
+            <Row style={{ fontFamily: 'Oswald-Light' }}>
+                <p className="pb-1 mb-0">Website created by Inna Dyachkova</p>
             </Row>        
         </Container>
     </div>    
