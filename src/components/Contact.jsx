@@ -4,8 +4,27 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
+import { Controller, useForm } from 'react-hook-form';
 
 const Contact = () => {
+
+  const {
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      name: '',
+      email: '',
+      message: '',
+      subject: '',
+    },
+  });
+
+  const submitForm = (data) => {
+      console.log(data);
+
+  }
   return (
     <Container>
       <h1 className="text-uppercase fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
@@ -15,22 +34,99 @@ const Contact = () => {
           <Image src="/images/dina_contacts.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
         </Col>
         <Col xs={12} xl={6} md={6}>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Control type="name" placeholder="Name" />
+          <Form noValidate onSubmit={handleSubmit(submitForm)}>
+            <Form.Group className="mb-3" controlId="validationInputName">
+              <Controller
+                name="name"
+                control={control}
+                rules={{ required: true }}
+                render={({ field }) => (
+                  <Form.Control
+                    {...field}
+                    type="text"
+                    placeholder="Name"
+                    isInvalid={errors.name}
+                  />
+                )}
+              />
+              {errors.name && (
+                <Form.Control.Feedback type="invalid">
+                  Name is required
+                </Form.Control.Feedback>
+              )}
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
-              <Form.Control type="email" placeholder="Email" />
+            <Form.Group className="mb-3" controlId="validationInputEmail">
+              <Controller
+                name="email"
+                control={control}
+                rules={{ required: true, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ }}
+                render={({ field }) => (
+                  <Form.Control
+                    {...field}
+                    type="text"
+                    placeholder="Email"
+                    isInvalid={errors.email}
+                  />
+                )}
+              />
+              {errors.email?.type === "pattern" && (
+                <Form.Control.Feedback type="invalid">
+                  Invalid email
+                </Form.Control.Feedback>
+              )}
+              {errors.email?.type === "required" && (
+                <Form.Control.Feedback type="invalid">
+                  Email required
+                </Form.Control.Feedback>
+              )}
             </Form.Group>
-            <Form.Select aria-label="Default select example" className="mb-3">
-              <option>Subject</option>
-              <option value="phootography">Photography</option>
-              <option value="animation">Animation</option>
-              <option value="price">Send a price</option>
-              <option value="other">Other</option>
-            </Form.Select>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows={6} placeholder="Message" />
+            <Form.Group className="mb-3" controlId="validationSubject">
+              <Controller
+                name="subject"
+                control={control}
+                rules={{ required: true }}
+                render={({ field }) => (
+                  <Form.Select
+                    {...field}
+                    aria-label="Select subject"
+                    isInvalid={errors.subject}
+                  >
+                    <option value="">Subject</option>
+                    <option value="photography">Photography</option>
+                    <option value="animation">Animation</option>
+                    <option value="price">Send a price</option>
+                    <option value="other">Other</option>
+                  </Form.Select>
+                )}
+              />
+              {errors.subject && (
+                <Form.Control.Feedback type="invalid">
+                  Please select a subject
+                </Form.Control.Feedback>
+              )}
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="validationMessage">
+              <Controller
+                name="message"
+                control={control}
+                rules ={{ required: true, minLength: 10, maxLength: 1000 }}
+                render={({ field }) => (
+                  <Form.Control
+                    {...field} 
+                    as="textarea" 
+                    rows={6} 
+                    placeholder="Message"
+                    isInvalid={errors.message} 
+                  />
+                )}
+              />
+              {errors.message && (
+                <Form.Control.Feedback type="invalid">
+                  {errors.message?.type === "required" && 'Please enter your message'}
+                  {errors.message.type === 'minLength' && 'Message is too short'}
+                  {errors.message.type === 'maxLength' && 'Message is too long'}
+                </Form.Control.Feedback>
+              )}
             </Form.Group>
             <Form.Group className="d-flex justify-content-end">
               <Button variant="outline-secondary" type="submit" className="px-4" style={{ borderColor: "#ced4da" }}>Send</Button>
