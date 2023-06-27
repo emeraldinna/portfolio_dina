@@ -21,10 +21,21 @@ const Contact = () => {
     },
   });
 
-  const submitForm = (data) => {
-      console.log(data);
-
+  const submitForm = (data, e) => {
+    e.preventDefault()
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data
+    })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
+
   return (
     <Container>
       <h1 className="text-uppercase fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
@@ -35,7 +46,7 @@ const Contact = () => {
         </Col>
         <Col xs={12} xl={6} md={6}>
           <Form name="contact" method="POST" noValidate onSubmit={handleSubmit(submitForm)}>
-          <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <Form.Group className="mb-3" controlId="validationInputName">
               <Controller
                 name="name"
@@ -113,15 +124,15 @@ const Contact = () => {
               <Controller
                 name="message"
                 control={control}
-                rules ={{ required: true, minLength: 10, maxLength: 1000 }}
+                rules={{ required: true, minLength: 10, maxLength: 1000 }}
                 render={({ field }) => (
                   <Form.Control
-                    {...field} 
-                    as="textarea" 
-                    rows={6} 
+                    {...field}
+                    as="textarea"
+                    rows={6}
                     placeholder="Message"
                     isInvalid={errors.message}
-                    name="message" 
+                    name="message"
                   />
                 )}
               />
