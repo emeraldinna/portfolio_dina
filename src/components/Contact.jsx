@@ -21,12 +21,18 @@ const Contact = () => {
     },
   });
 
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   const submitForm = (data, e) => {
     e.preventDefault()
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: data
+      body: encode(data)
     })
       .then(response => {
         console.log(response)
