@@ -35,7 +35,6 @@ const Contact = () => {
         </Col>
         <Col xs={12} xl={6} md={6}>
           <Form name="contact-dortndortn" method="POST" data-netlify="true" noValidate onSubmit={handleSubmit(submitForm)}>
-            <input type="hidden" name="contact-dortndortn" value="contact" />
             <Form.Group className="mb-3" controlId="validationInputName">
               <Controller
                 name="name"
