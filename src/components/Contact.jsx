@@ -34,7 +34,8 @@ const Contact = () => {
           <Image src="/images/dina_contacts.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
         </Col>
         <Col xs={12} xl={6} md={6}>
-          <Form noValidate onSubmit={handleSubmit(submitForm)}>
+          <Form name="contact" method="POST" data-netlify="true" noValidate onSubmit={handleSubmit(submitForm)}>
+            <input type="hidden" name="contact" value="contact" />
             <Form.Group className="mb-3" controlId="validationInputName">
               <Controller
                 name="name"
@@ -46,6 +47,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Name"
                     isInvalid={errors.name}
+                    name="name"
                   />
                 )}
               />
@@ -66,6 +68,7 @@ const Contact = () => {
                     type="text"
                     placeholder="Email"
                     isInvalid={errors.email}
+                    name="email"
                   />
                 )}
               />
@@ -90,6 +93,7 @@ const Contact = () => {
                     {...field}
                     aria-label="Select subject"
                     isInvalid={errors.subject}
+                    name="subject[]"
                   >
                     <option value="">Subject</option>
                     <option value="photography">Photography</option>
@@ -116,7 +120,8 @@ const Contact = () => {
                     as="textarea" 
                     rows={6} 
                     placeholder="Message"
-                    isInvalid={errors.message} 
+                    isInvalid={errors.message}
+                    name="message" 
                   />
                 )}
               />
