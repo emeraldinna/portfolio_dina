@@ -5,8 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import { Controller, useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+
+  const navigate = useNavigate();
 
   const {
     control,
@@ -29,15 +32,15 @@ const Contact = () => {
 
   const submitForm = (data, e) => {
     e.preventDefault();
-    console.log(data);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...data})
     })
-      .then(response => {
-        console.log(response)
-      })
+      // .then(response => {
+      //   console.log(response)
+      // })
+      .then(() => navigate('/success'))
       .catch(error => {
         console.log(error)
       })
