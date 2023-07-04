@@ -42,3 +42,10 @@
 div.dropdown-menu.show {
   background-color: #e9ecef;
 }
+
+/* .image-container img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
