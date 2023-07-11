@@ -49,3 +49,9 @@ div.dropdown-menu.show {
   height: auto;
   object-fit: cover;
 } */
+
+.custom-react-player .react-player__play-icon {
+  background: none !important;
+  box-shadow: none !important;
+  color: white !important;
+}

@@ -1,4 +1,7 @@
-const Overlay = ({ projectSrc, onClose }) => {
+import ReactPlayer from 'react-player';
+
+const Overlay = ({ project, onClose }) => {
+    const { type, largeSource, videoUrl } = project;
     return (
         <div
             style={{
@@ -13,7 +16,6 @@ const Overlay = ({ projectSrc, onClose }) => {
                 justifyContent: 'center',
                 zIndex: '9999',
             }}
-            onClick={onClose}
         >
             <button
                 title="Close"
@@ -32,11 +34,22 @@ const Overlay = ({ projectSrc, onClose }) => {
             >
                 &times;
             </button>
-            <img
-                src={projectSrc}
-                alt="Fullsize"
-                style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
-            />
+            {type === 'photo' ? (
+                <img
+                    src={`/images/home-page/${largeSource}`}
+                    alt="Fullsize"
+                    style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
+                />
+            ) : (
+                <ReactPlayer 
+                    url={videoUrl}
+                    controls
+                    playing
+                    muted
+                    light={true}
+                    className="custom-react-player"
+                />    
+            )}
         </div>
 
     );
