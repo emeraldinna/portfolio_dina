@@ -33,5 +33,13 @@
         "smallSource": "05.jpg",
         "largeSource": "05a.jpg",
         "type": "photo"        
-    }
+    },
+    {
+        "id": 6,
+        "title": "stop-motion animation",
+        "smallSource": "stop-animation.png",
+        "largeSource": "",
+        "type": "video",
+        "videoUrl": "https://vimeo.com/553224912"
+      }    
 ]
