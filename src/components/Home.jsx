@@ -27,7 +27,7 @@ const Home = () => {
   }
 
   return (
-    <Container>
+    <Container className="mt-5">
       <h1 className="mb-5 text-uppercase" style={{ fontFamily: 'Oswald-SemiBold' }}>Portfolio</h1>
       <Row className="mb-4">
         {data.map(project => (
@@ -83,70 +83,4 @@ const Home = () => {
 
 export default Home;
 
-// <Container>
-// <h1 className="mb-5 text-uppercase" style={{ fontFamily: 'Oswald-SemiBold' }}>Portfolio</h1>
-// <Row className="mb-4">
-//   {data.map(project => (
-//     <Col key={project.id} xs={12} md={6} lg={4} className="px-1 py-1">
-//       <div
-//         style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
-//         onClick={() => handleClick(project.largeSource)}
-//         onMouseEnter={() => handleMouseEnter(project)}
-//         onMouseLeave={handleMouseLeave}
-//       >
-//         {project.type === 'photo' ? (
-//           <Image
-//             src={`/images/home-page/${project.smallSource}`}
-//             fluid
-//             style={{
-//               width: '100%',
-//               height: '100%',
-//               objectFit: 'cover',
-//               position: 'absolute',
-//               top: '0',
-//               left: '0',
-//               cursor: 'pointer',
-//             }}
-//           />
-//         ) : (
-//           <ReactPlayer
-//             src={`/images/home-page/${project.smallSource}`}
-//             url={project.videoUrl}
-//             light={true}
-//             height={'300px'}
-//             width={'inherit'}
-//             style={{
-//               objectFit: 'cover',
-//               cursor: 'pointer',
-//             }}
-//             className="custom-react-player"
-//           />
-//         )}
-//         {hoveredProject === project && (
-//           <div
-//             style={{
-//               position: 'absolute',
-//               bottom: '0',
-//               left: '0',
-//               width: '100%',
-//               background: 'rgba(0, 0, 0, 0.8)',
-//               color: '#fff',
-//               padding: '8px',
-//               textAlign: 'center',
-//             }}
-//           >
-//             {project.title}
-//           </div>
-//         )}
-//       </div>
-//     </Col>
-//   ))}
-// </Row>
-// {selectedProject && (
-//   <Overlay
-//     projectSrc={`/images/home-page/${selectedProject}`}
-//     onClose={handleOverlayClose}
-//   />
-// )}
-// </Container>
 

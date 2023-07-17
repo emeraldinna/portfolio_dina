@@ -8,7 +8,6 @@ import { Controller, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
-
   const navigate = useNavigate();
 
   const {
@@ -47,7 +46,7 @@ const Contact = () => {
   }
 
   return (
-    <Container>
+    <Container className="mt-5">
       <h1 className="text-uppercase fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
       <p className="pb-5 fs-5 text fw-semibold" style={{ fontFamily: 'Oswald-Light' }}>If you have any questions do not hesitate to contact me!</p>
       <Row>
