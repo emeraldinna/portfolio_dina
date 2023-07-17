@@ -1,11 +1,21 @@
-import { Fragment } from 'react';
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from '../data/animations.json';
+import { Fragment } from 'react';
 
 const Animation = () => {
+  const[hoveredProject, setHoveredProject] = useState(null);
+
+  const handleMouseEnter = (project) => {
+    setHoveredProject(project);
+  }
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  }
   
   return (
     <Fragment>
@@ -19,6 +29,8 @@ const Animation = () => {
             <Col key={project.id} xs={12} md={6} lg={4} className="px-1 py-1">
               <div
                 style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
+                onMouseEnter={() => handleMouseEnter(project)}
+                onMouseLeave={handleMouseLeave}
               >
                 <Image
                   src={`/images/home-page/${project.source}`}
@@ -33,6 +45,22 @@ const Animation = () => {
                     cursor: 'pointer',
                   }}
                 />
+                {hoveredProject === project && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      bottom: '0',
+                      left: '0',
+                      width: '100%',
+                      background: 'rgba(0, 0, 0, 0.8)',
+                      color: '#fff',
+                      padding: '8px',
+                      textAlign: 'center',
+                    }}
+                  >
+                    {project.title}
+                  </div>
+                )}
               </div>
             </Col>
           ))}
