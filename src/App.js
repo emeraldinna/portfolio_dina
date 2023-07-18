@@ -9,6 +9,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Success from './components/Success';
+import SingleAnimation from'./components/SingleAnimation';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="photography" element={<Photography />} />
             <Route path="photography/:genre" element={<Photography />} />
             <Route path="animation" element={<Animation />} />
+            <Route path="animation/:id" element={<SingleAnimation />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="success" element={<Success />} />

@@ -1,26 +1,81 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import data from '../data/animations.json';
+import { Fragment } from 'react';
 
 const Animation = () => {
-  return (
-    <Container>
-        <h1 className="text-uppercase pb-5" style={{ fontFamily: 'Oswald-SemiBold' }}>Animation</h1>
-        <p>Sed dignissim massa libero, mattis tincidunt tellus molestie vitae. Proin facilisis urna et semper dignissim. Vestibulum dignissim mauris nec nulla ullamcorper interdum. Integer ultricies mollis mauris eu facilisis. Curabitur a ipsum faucibus, egestas sem a, tristique velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tincidunt ullamcorper. Curabitur maximus nisi non diam dapibus molestie. Nulla sed porta metus, et volutpat dui. Etiam mauris felis, tempus efficitur fermentum nec, lacinia non augue. In ut cursus massa. Nam varius id urna a tempor. Vivamus quis dui nec sem lobortis convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sed congue urna, at viverra libero. Integer quis ex neque.
+  const navigate = useNavigate();
+  const [hoveredProject, setHoveredProject] = useState(null);
 
-        Duis non urna ut elit commodo elementum non ut ligula. Quisque finibus, dolor in faucibus dictum, purus sem fermentum felis, quis sollicitudin lorem elit ut risus. Nulla facilisi. Fusce vel nibh eget quam sodales auctor. Morbi sed ex quis diam lacinia varius. Duis mattis ligula dictum, eleifend massa at, feugiat quam. Fusce ultrices, velit sit amet laoreet sagittis, leo metus consectetur diam, vel mollis massa neque non mauris. Donec volutpat elit eu suscipit tempus. Vivamus pharetra varius urna sit amet molestie. Vivamus sit amet tempus massa. Pellentesque fringilla imperdiet nunc id fermentum. Ut ultrices neque sed efficitur mattis. Nunc iaculis, turpis id lacinia commodo, leo odio aliquet leo, ac pulvinar lectus purus vitae arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rutrum, ex quis lacinia sagittis, urna dolor congue ligula, ac rhoncus risus lacus quis nisi.
-        
-        Integer lacus diam, mattis ut diam eget, rutrum cursus ligula. Phasellus sit amet sapien tristique, venenatis sem vel, vestibulum dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed commodo dui eget nisi gravida, ac condimentum tellus placerat. Donec tempor commodo tincidunt. Pellentesque at semper nibh, bibendum tincidunt leo. Donec iaculis vel augue a vestibulum. Sed sed sem eu tellus ornare sollicitudin nec ut mauris. Donec et convallis quam. Aliquam auctor consectetur libero eu mattis. Fusce tristique tristique nunc, et tristique lectus volutpat sit amet. Curabitur suscipit elit ac dictum ullamcorper. Donec sed lacus fringilla nibh rhoncus eleifend ut mattis eros. Curabitur luctus in mi vitae ultrices. Fusce ultricies imperdiet massa sed malesuada. Phasellus convallis tortor nec ipsum facilisis finibus.
-        
-        Vivamus pellentesque efficitur enim, sit amet scelerisque eros lacinia nec. Morbi id varius lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis pellentesque, velit sit amet cursus egestas, nibh risus laoreet nisi, ac facilisis massa elit sed diam. Aliquam in interdum lacus. Aliquam eu fermentum justo. Duis eget ipsum magna. Maecenas auctor elit in metus suscipit, quis facilisis velit consequat. Maecenas lacinia pharetra vehicula. Praesent quis scelerisque felis. Duis ac sagittis sapien. In tempus eget arcu vel lobortis. Curabitur ultricies, tellus euismod ornare feugiat, urna quam auctor ex, non ultrices orci velit vitae turpis.
-        
-        Integer sollicitudin cursus ex, ut finibus sem laoreet in. Cras molestie ultricies massa tincidunt tempor. Nunc congue rutrum mauris. Phasellus congue vitae tellus sit amet convallis. Vivamus quis nisl lectus. Fusce facilisis dolor tortor, sit amet vulputate neque malesuada eu. Praesent ut erat neque. Vestibulum aliquam molestie consequat. Vestibulum convallis justo nec tincidunt scelerisque. Morbi odio metus, faucibus non arcu sit amet, accumsan gravida enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        
-        In tempus sapien id lacus pharetra, sit amet sollicitudin lectus pretium. Maecenas ullamcorper tortor et risus gravida, eget venenatis libero consequat. Aliquam tristique mattis arcu, id tristique erat tristique ut. Duis nec odio commodo, vulputate tortor sed, scelerisque diam. Etiam euismod magna nec purus pellentesque pulvinar. Morbi lacinia nisi leo, id finibus sapien dictum ac. Cras aliquet fringilla libero ac auctor. Vestibulum vel bibendum lacus. Vestibulum augue sem, viverra in leo eu, vehicula venenatis magna. Praesent laoreet aliquam lacus, eget pretium ex consectetur a.
-        
-        Integer auctor quam ac vestibulum pretium. Maecenas et lectus sit amet arcu blandit luctus ut eu sapien. Nam a aliquet nulla. Phasellus vel ligula sed lectus tincidunt egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ut velit eros. Ut sit amet rhoncus justo. Duis egestas nec turpis a semper. Nulla vulputate interdum dui, nec hendrerit neque consequat quis. Vestibulum et odio vestibulum, mattis lacus eget, interdum ligula. Aliquam lobortis tellus eu viverra ullamcorper. Pellentesque imperdiet orci at lorem commodo auctor. Pellentesque arcu diam, commodo pharetra facilisis sed, facilisis eu metus. Duis sit amet aliquet tortor.
-        
-        Curabitur nec magna molestie, rhoncus lectus quis, ultrices massa. Praesent eget nisl sodales, porta tortor quis, maximus nibh. Integer eu nunc ultricies, dictum nisl ac, dignissim mauris. In vitae turpis iaculis, mattis justo at, ultrices dolor. Pellentesque vitae leo vel lorem lacinia vestibulum. Integer consequat condimentum lacus, in ultricies lorem semper non.</p>
-    </Container>
-  )
+  const handleMouseEnter = (project) => {
+    setHoveredProject(project);
+  }
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  }
+
+  const handleClick = (project) => {
+    console.log(project);
+    navigate(`/animation/${project.id}`, { state: { project} });
+  }
+
+  return (
+    <Fragment>
+      <div className="hero-wrapper">
+        <div className="hero-overlay" />
+        <Image className="hero-image" src="/baner-animation-test.jpg" fluid />
+      </div>
+      <Container className="mt-5">
+        <Row className="mb-4">
+          {data.map(project => (
+            <Col key={project.id} xs={12} md={6} lg={4} className="px-1 py-1">
+              <div
+                style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
+                onClick={() => handleClick(project) }
+                onMouseEnter={() => handleMouseEnter(project)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <Image
+                  src={`/images/home-page/${project.source}`}
+                  fluid
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    position: 'absolute',
+                    top: '0',
+                    left: '0',
+                    cursor: 'pointer',
+                  }}
+                />
+                {hoveredProject === project && (
+                  <div
+                    style={{
+                      position: 'absolute',
+                      bottom: '0',
+                      left: '0',
+                      width: '100%',
+                      background: 'rgba(0, 0, 0, 0.8)',
+                      color: '#fff',
+                      padding: '8px',
+                      textAlign: 'center',
+                    }}
+                  >
+                    {project.title}
+                  </div>
+                )}
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </Fragment>
+  );
 }
 
 export default Animation;
