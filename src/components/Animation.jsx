@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
@@ -7,7 +8,8 @@ import data from '../data/animations.json';
 import { Fragment } from 'react';
 
 const Animation = () => {
-  const[hoveredProject, setHoveredProject] = useState(null);
+  const navigate = useNavigate();
+  const [hoveredProject, setHoveredProject] = useState(null);
 
   const handleMouseEnter = (project) => {
     setHoveredProject(project);
@@ -16,7 +18,12 @@ const Animation = () => {
   const handleMouseLeave = () => {
     setHoveredProject(null);
   }
-  
+
+  const handleClick = (project) => {
+    console.log(project);
+    navigate(`/animation/${project.id}`, { state: { project} });
+  }
+
   return (
     <Fragment>
       <div className="hero-wrapper">
@@ -29,6 +36,7 @@ const Animation = () => {
             <Col key={project.id} xs={12} md={6} lg={4} className="px-1 py-1">
               <div
                 style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
+                onClick={() => handleClick(project) }
                 onMouseEnter={() => handleMouseEnter(project)}
                 onMouseLeave={handleMouseLeave}
               >
