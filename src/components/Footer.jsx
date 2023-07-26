@@ -52,7 +52,7 @@ const Footer = () => {
                 </Nav>
             </Row>
             <Row className="pb-0">
-                <p className="fs-5 mb-2" style={{ fontFamily: 'Oswald-Semibold' }}>test@gmail.com</p>
+                <p className="fs-5 mb-2" style={{ fontFamily: 'Oswald-Semibold' }}>dortndortn@gmail.com</p>
             </Row>
             <Row style={{ fontFamily: 'Oswald-Light' }}>
                 <p className="pb-1 mb-0">All works © Dina Berkgaut</p>

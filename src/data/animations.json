@@ -1,50 +1,59 @@
 [
     {
         "id": 1,
-        "title": "Project #1",
-        "source": "stop-animation.png",
-        "type": "animation"
+        "title": "Shelter 3 Teaser",
+        "source": "shelter.png",
+        "type": "game",
+        "description": "I worked at Might And Delight studio as a junior animator at Shelter 3 and Meadows projects and made keyframe animations for elephants and elephant babies, crocodiles, buffaloes for Shelter 3 and more animations for elephant babies for Meadows . All animation made in Motion Builder.",
+        "videos" : [
+            { "url" : "https://youtu.be/UmqrVpFa2OU", "title" : "Shelter 3 Teaser"},
+            { "url" : "https://youtu.be/U_IlNFERdzE", "title" : "Shelter 3 Launch Trailer"},
+            { "url" : "https://youtu.be/hqOvGgD3VtU", "title" : "Elephant Calf in animal MMO ”Meadow"}
+        ],
+        "drafts": [
+            { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "The hungry baby calf animation for Shelter 3", "text" : ""}  
+        ]
     },
     {
         "id": 2,
         "title": "Project #2",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     },
     {
         "id": 3,
         "title": "Project #3",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     },
     {
         "id": 4,
         "title": "Project #4",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     },
     {
         "id": 5,
         "title": "Project #5",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     },
     {
         "id": 6,
         "title": "Project #6",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     },
     {
         "id": 7,
         "title": "Project #7",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     },
     {
         "id": 8,
         "title": "Project #8",
-        "source": "stop-animation.png",
+        "source": "",
         "type": "animation"
     }
 ]

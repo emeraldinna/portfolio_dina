@@ -28,7 +28,6 @@ const Home = () => {
 
   return (
     <Container className="mt-5">
-      <h1 className="mb-5 text-uppercase" style={{ fontFamily: 'Oswald-SemiBold' }}>Portfolio</h1>
       <Row className="mb-4">
         {data.map(project => (
           <Col key={project.id} xs={12} md={6} lg={4} className="px-1 py-1">

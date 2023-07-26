@@ -41,7 +41,7 @@ const Animation = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <Image
-                  src={`/images/home-page/${project.source}`}
+                  src={`/images/animation-page/${project.source}`}
                   fluid
                   style={{
                     width: '100%',
