@@ -8,7 +8,8 @@ const SingleAnimation = () => {
     const location = useLocation();
     // console.log(location);
     const { project } = location.state;
-    // console.log(project);
+    console.log(project);
+    const markup = { __html: project.description };
 
     return (
         <Container className="mt-5">
@@ -35,7 +36,8 @@ const SingleAnimation = () => {
             </Row>
             <Row className="mb-4 justify-content-center" style={{ textAlign: 'left' }}>
                     <div><h2 className="fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>{project.title}</h2></div>
-                    <div>{project.description}</div>
+                    <div dangerouslySetInnerHTML={markup}  className="mb-4"/>
+                    {project.link && <a href={project.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}><p>Official YouTube channel</p></a>}
             </Row>
         </Container>
     );

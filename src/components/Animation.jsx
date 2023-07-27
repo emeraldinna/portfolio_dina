@@ -66,7 +66,7 @@ const Animation = () => {
                       textAlign: 'center',
                     }}
                   >
-                    {project.title}
+                    {project.alt}
                   </div>
                 )}
               </div>
