@@ -6,16 +6,15 @@ import ReactPlayer from 'react-player';
 
 const SingleAnimation = () => {
     const location = useLocation();
-    // console.log(location);
     const { project } = location.state;
-    console.log(project);
+    // console.log(project);
     const markup = { __html: project.description };
 
     return (
         <Container className="mt-5">
             <Row className="mb-4 justify-content-center">
                 {project.videos.map((video, index) => (
-                    <Col key={index} className="py-4" xs={12} xl={6} md={8}>
+                    <Col key={index} xs={12} sm={12} md={10} lg={8} xl={6} xxl={6} className="py-4">
                         <div
                             style={{ position: 'relative', width: '100%', height: '300px' }} 
                         >

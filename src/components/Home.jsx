@@ -28,9 +28,9 @@ const Home = () => {
 
   return (
     <Container className="mt-5">
-      <Row className="mb-4">
+      <Row className="mb-4 justify-content-center">
         {data.map(project => (
-          <Col key={project.id} xs={12} md={6} lg={4} className="px-1 py-1">
+          <Col key={project.id} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className="px-1 py-1">
             <div
               style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
               onClick={() => handleClick(project)}
