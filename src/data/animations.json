@@ -1,50 +1,71 @@
 [
     {
         "id": 1,
-        "title": "Project #1",
-        "source": "stop-animation.png",
-        "type": "animation"
+        "alt": "Shelter 3 Teaser",
+        "title": "Shelter 3 Teaser",
+        "source": "shelter-test.png",
+        "type": "game",
+        "description": "I worked at Might And Delight studio as a junior animator at Shelter 3 and Meadows projects and made keyframe animations for elephants and elephant babies, crocodiles, buffaloes for Shelter 3 and more animations for elephant babies for Meadows . All animation made in Motion Builder.",
+        "videos" : [
+            { "url" : "https://youtu.be/UmqrVpFa2OU", "title" : "Shelter 3 Teaser"},
+            { "url" : "https://youtu.be/U_IlNFERdzE", "title" : "Shelter 3 Launch Trailer"},
+            { "url" : "https://youtu.be/hqOvGgD3VtU", "title" : "Elephant Calf in animal MMO ”Meadow"}
+        ],
+        "drafts": [
+            { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "The hungry baby calf animation for Shelter 3", "text" : ""}  
+        ]
     },
     {
         "id": 2,
-        "title": "Project #2",
-        "source": "stop-animation.png",
-        "type": "animation"
+        "alt": "Moonzy (Luntik and his friends)",
+        "title": "Moonzy (Luntik and his friends): TV series for pre-school children.",
+        "source": "moonzy.jpg",
+        "type": "tv",
+        "description": "I started my work at Studio Melnitsa, St.Petersburg on the project Moonzy since it's beginning in 2005 and worked on it until 2008. First seasons were made in 2D cutout technique (After Effects). Character design and backgrounds were made in Photoshop.",
+        "link": "https://www.youtube.com/user/luntik",
+        "videos": [
+            { "url" : "https://youtu.be/PL8NcXYbzu0", "title" : "Dandelion my animation reel" },
+            { "url" : "https://youtu.be/YQXWdkWKCoU", "title" : "Butterflies animation, my reel" }
+        ]
     },
     {
         "id": 3,
-        "title": "Project #3",
-        "source": "stop-animation.png",
-        "type": "animation"
+        "alt": "The Barkers",
+        "title": "The Barkers (Barboskins): TV series for children",
+        "source": "barkers.jpg",
+        "type": "tv",
+        "description": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.<br><p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple lighting, complex lighting together with lighting supervisor</li><li>Collaboration with Dynamic Effects and with Textures and Backgrounds departments</li><li>Final rendering (Pixar Renderman)</li><li>Compositing, 2D effects (After Effects, Premier, basic Nuke)</li><li>(Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop)</li></ul><br>As a visualizer I was responsible for finding all kinds of visual and animation problems, logical discrepancies etc. Fixing this required tight collaboration with episode director, artistic director, lead animator, technical director and film editor.",
+        "link": "https://www.youtube.com/user/barboskinyonline",
+        "videos": [
+            { "url" : "https://youtu.be/t6KO2LH9HXs", "title" : "The Barkers" }
+        ]  
     },
     {
         "id": 4,
-        "title": "Project #4",
-        "source": "stop-animation.png",
-        "type": "animation"
+        "alt": "Huba-bubba commercials",
+        "title": "Huba-bubba commercials",
+        "source": "huba-bubba.jpg",
+        "type": "tv",
+        "description": "<p>After studying at St. Petersburg State University of Film and Television I started working as a Character Assistant on 'Hubba-bubba' commercials by Visotsky&Sikorsky Animation Studio in 2004 - 2005 (internship, later employment).</p><p>It was good old clay animation! My duty was to again and again sculpt plasticine characters for stop-motion animation.</p>",
+        "link": "",
+        "videos": [
+            { "url" : "https://youtu.be/zodonIou6rs", "title" : "Huba-bubba commercials" },
+            { "url" : "https://youtu.be/4UOrhHxBaNE", "title" : "Huba-bubba" }
+        ]
     },
     {
         "id": 5,
-        "title": "Project #5",
-        "source": "stop-animation.png",
-        "type": "animation"
-    },
-    {
-        "id": 6,
-        "title": "Project #6",
-        "source": "stop-animation.png",
-        "type": "animation"
-    },
-    {
-        "id": 7,
-        "title": "Project #7",
-        "source": "stop-animation.png",
-        "type": "animation"
-    },
-    {
-        "id": 8,
-        "title": "Project #8",
-        "source": "stop-animation.png",
-        "type": "animation"
-    }
+        "alt": "Animation with kids",
+        "title": "Animation with kids",
+        "source": "flower-test.png",
+        "type": "stop-motion",
+        "description": "",
+        "link": "",
+        "videos": [
+            { "url" : "https://youtu.be/v7rI-J5Qmrg", "title" : "At stop motion workshop" },
+            { "url" : "https://youtu.be/PvkinDaR2Pg", "title" : "draft - leaves" },
+            { "url" : "https://youtu.be/hVwyHjAmmzM", "title" : "draft - test turtle" },
+            { "url" : "https://youtu.be/tteKMrJm3FQ", "title" : "draft - animation loop"}
+        ]
+    }    
 ]
