@@ -6,7 +6,8 @@
         "smallSource": "05.jpg",
         "largeSource": "05a.jpg",
         "description": "",
-        "type": "individual",
+        "type" : "photo",
+        "kind": "individual",
         "genre": "people"
     },
     {
@@ -16,7 +17,8 @@
         "smallSource": "01.jpg",
         "largeSource": "01a.jpg",
         "description": "",
-        "type": "project",
+        "type" : "photo",
+        "kind": "project",
         "genre": "events"
     },
     {
@@ -26,7 +28,8 @@
         "smallSource": "02.jpg",
         "largeSource": "02a.jpg",
         "description": "",
-        "type": "project",
+        "type" : "photo",
+        "kind": "project",
         "genre": "places"        
     },
     {
@@ -36,7 +39,8 @@
         "smallSource": "03.jpg",
         "largeSource": "03.jpg",
         "description": "",
-        "type": "project",
+        "type" : "photo",
+        "kind": "project",
         "genre": "places"        
     },
     {
@@ -46,7 +50,8 @@
         "smallSource": "04.jpg",
         "largeSource": "04a.jpg",
         "description": "",
-        "type": "project",
+        "type" : "photo",
+        "kind": "project",
         "genre": "assignments"        
     },
     {
@@ -56,7 +61,8 @@
         "smallSource": "05.jpg",
         "largeSource": "05a.jpg",
         "description": "",
-        "type": "project",
+        "type" : "photo",
+        "kind": "project",
         "genre": "people"        
     }    
 ]
