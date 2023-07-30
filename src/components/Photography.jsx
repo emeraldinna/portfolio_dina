@@ -5,9 +5,11 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from '../data/photos.json';
+import Overlay from './Overlay';
 
 const Photography = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleMouseEnter = (project) => {
     if (project.title !== "") {
@@ -22,6 +24,16 @@ const Photography = () => {
     setHoveredProject(null);
   }
 
+  const handleClick = (project) => {
+    if (project.kind === "individual") {
+      setSelectedProject(project);
+    }
+  }
+
+  const handleOverlayClose = () => {
+    setSelectedProject(null);
+  }
+
   return (
     <Fragment>
       <div className="hero-wrapper">
@@ -34,6 +46,7 @@ const Photography = () => {
             <Col key={project.id} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className="px-1 py-1 justify-content-center">
               <div
               style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
+              onClick={() => handleClick(project) }
               onMouseEnter={() => handleMouseEnter(project)}
               onMouseLeave={handleMouseLeave}
               >
@@ -70,6 +83,12 @@ const Photography = () => {
             </Col>
           ))}
         </Row>
+        {selectedProject && (
+          <Overlay
+            project={selectedProject}
+            onClose={handleOverlayClose}
+          />
+        )}        
       </Container>
     </Fragment>
   );
