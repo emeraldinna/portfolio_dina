@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "alt": "",
+        "title": "",
+        "smallSource": "05.jpg",
+        "largeSource": "05a.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 2,
+        "alt": "",
+        "title": "theatrical image",
+        "smallSource": "01.jpg",
+        "largeSource": "01a.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "project",
+        "genre": "events"
+    },
+    {
+        "id": 3,
+        "alt": "",
+        "title": "pigeons",
+        "smallSource": "02.jpg",
+        "largeSource": "02a.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "project",
+        "genre": "places"        
+    },
+    {
+        "id": 4,
+        "alt": "",
+        "title": "dove sits on a lantern",
+        "smallSource": "03.jpg",
+        "largeSource": "03.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "project",
+        "genre": "places"        
+    },
+    {
+        "id": 5,
+        "alt": "",
+        "title": "girl in the water",
+        "smallSource": "04.jpg",
+        "largeSource": "04a.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "project",
+        "genre": "assignments"        
+    },
+    {
+        "id": 6,
+        "alt": "",
+        "title": "girl dressed as a cow on a bike",
+        "smallSource": "05.jpg",
+        "largeSource": "05a.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "project",
+        "genre": "people"        
+    }    
+]

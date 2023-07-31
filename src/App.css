@@ -61,7 +61,7 @@ div.dropdown-menu.show {
   height: auto;
   object-fit: cover;
   object-position: center;
-  opacity: 0.8;
+  opacity: 0.7;
   /* filter: brightness(0.8); */
 }
 
