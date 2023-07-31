@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -8,6 +9,7 @@ import data from '../data/photos.json';
 import Overlay from './Overlay';
 
 const Photography = () => {
+  const navigate = useNavigate();
   const [hoveredProject, setHoveredProject] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -27,6 +29,10 @@ const Photography = () => {
   const handleClick = (project) => {
     if (project.kind === "individual") {
       setSelectedProject(project);
+    }
+    else {
+      navigate(`/photography/${project.genre}/${project.id}`, { state: { project} });
+      // photography/:genre/:id
     }
   }
 
