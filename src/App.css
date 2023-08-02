@@ -42,6 +42,18 @@ div.dropdown-menu.show {
   background-color: #e9ecef;
 }
 
+.custom-navbar .active.nav-item a {
+  color: #000000E6;
+}
+
+.custom-navbar .dropdown-item.active {
+  background-color: #abadae;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: #abadae;
+}
+
 /* Overlay */
 .custom-react-player .react-player__play-icon {
   background: none !important;
