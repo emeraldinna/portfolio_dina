@@ -1,4 +1,5 @@
 import { LinkContainer } from 'react-router-bootstrap';
+import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -13,6 +14,8 @@ import { Fragment } from 'react';
 const iconStyle = { color: "black", size: "24px" };
 
 const Menu = () => {
+    const location = useLocation();
+    const isPhotographyActive = location.pathname.includes('/photography');
 
     return (
         <Fragment>
@@ -26,31 +29,36 @@ const Menu = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav>
-                            <NavDropdown title="Photography" id="basic-nav-dropdown" className="py-1" style={{ fontFamily: 'Oswald-Medium' }}>
-                                <LinkContainer to="photography/people">
+                            <NavDropdown 
+                                title="Photography" 
+                                id="basic-nav-dropdown" 
+                                className={`py-1 ${isPhotographyActive ? 'active' : ''}`} 
+                                style={{ fontFamily: 'Oswald-Medium' }}
+                            >
+                                <LinkContainer to="photography/people" active={location.pathname.startsWith('/photography/people')}>
                                     <NavDropdown.Item>People</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/events">
+                                <LinkContainer to="photography/events" active={location.pathname.startsWith('/photography/events')}>
                                     <NavDropdown.Item>Events</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/places">
+                                <LinkContainer to="photography/places" active={location.pathname.startsWith('/photography/places')}>
                                     <NavDropdown.Item>Places</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/assignments">
+                                <LinkContainer to="photography/assignments" active={location.pathname.startsWith('/photography/assignments')}>
                                     <NavDropdown.Item>Assignments</NavDropdown.Item>
-                                </LinkContainer>
+                                </LinkContainer> 
                                 <NavDropdown.Divider />
-                                <LinkContainer to="photography">
+                                <LinkContainer to="photography" active={location.pathname.startsWith('/photography') && !location.pathname.startsWith('/photography/people') && !location.pathname.startsWith('/photography/events') && !location.pathname.startsWith('/photography/places') && !location.pathname.startsWith('/photography/assignments')}>
                                     <NavDropdown.Item>All</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
-                            <LinkContainer to="animation" style={{ fontFamily: 'Oswald-Medium' }}>
+                            <LinkContainer to="animation" active={location.pathname.startsWith('/animation')} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>Animation</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="about" style={{ fontFamily: 'Oswald-Medium' }}>
+                            <LinkContainer to="about" active={location.pathname === '/about'} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>About</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="contact" style={{ fontFamily: 'Oswald-Medium' }}>
+                            <LinkContainer to="contact" active={location.pathname === '/contact'} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>Contact</Nav.Link>
                             </LinkContainer>
                             <Navbar.Text>
@@ -91,17 +99,3 @@ const Menu = () => {
 }
 
 export default Menu;
-
-// <nav>
-//     <NavLink to="." style={({ isActive }) => isActive ? {color: 'black', textDecoration: 'none'} : {}}>
-//         DINA BERKGAUT
-//     </NavLink>
-//     <NavLink to="photography">Photography</NavLink>
-//     <NavLink to="animation">Animation</NavLink>
-//     <NavLink to="about">About</NavLink>
-//     <NavLink to="contact">Contact</NavLink>
-// </nav>
-
-// <NavDropdown.Item><NavLink to="photography">All</NavLink></NavDropdown.Item>
-
-// <Container fluid></Container>
