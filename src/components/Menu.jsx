@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
@@ -15,11 +16,27 @@ const iconStyle = { color: "black", size: "24px" };
 
 const Menu = () => {
     const location = useLocation();
+    const [expanded, setExpanded] = useState(false);
+    
+    const handleMenuToggle = () => {
+        setExpanded(!expanded);
+    };
+
+    const handleMenuItemClick = () => {
+        setExpanded(false);
+    };
+    
     const isPhotographyActive = location.pathname.includes('/photography');
 
     return (
         <Fragment>
-            <Navbar expand="lg" fixed="top" className="custom-navbar">
+            <Navbar 
+                expand="lg" 
+                fixed="top" 
+                className="custom-navbar"
+                expanded={expanded}
+                onToggle={handleMenuToggle}
+            >
                 <Container>
                     <LinkContainer to="." style={{ fontFamily: 'Oswald-Bold', fontSize: '36px' }}>
                         <Navbar.Brand>
@@ -31,34 +48,34 @@ const Menu = () => {
                         <Nav>
                             <NavDropdown 
                                 title="Photography" 
-                                id="basic-nav-dropdown" 
+                                id="basic-nav-dropdown"
                                 className={`py-1 ${isPhotographyActive ? 'active' : ''}`} 
                                 style={{ fontFamily: 'Oswald-Medium' }}
                             >
-                                <LinkContainer to="photography/people" active={location.pathname.startsWith('/photography/people')}>
+                                <LinkContainer to="photography/people" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/people')}>
                                     <NavDropdown.Item>People</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/events" active={location.pathname.startsWith('/photography/events')}>
+                                <LinkContainer to="photography/events" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/events')}>
                                     <NavDropdown.Item>Events</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/places" active={location.pathname.startsWith('/photography/places')}>
+                                <LinkContainer to="photography/places" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/places')}>
                                     <NavDropdown.Item>Places</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/assignments" active={location.pathname.startsWith('/photography/assignments')}>
+                                <LinkContainer to="photography/assignments" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/assignments')}>
                                     <NavDropdown.Item>Assignments</NavDropdown.Item>
                                 </LinkContainer> 
                                 <NavDropdown.Divider />
-                                <LinkContainer to="photography" active={location.pathname.startsWith('/photography') && !location.pathname.startsWith('/photography/people') && !location.pathname.startsWith('/photography/events') && !location.pathname.startsWith('/photography/places') && !location.pathname.startsWith('/photography/assignments')}>
+                                <LinkContainer to="photography" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography') && !location.pathname.startsWith('/photography/people') && !location.pathname.startsWith('/photography/events') && !location.pathname.startsWith('/photography/places') && !location.pathname.startsWith('/photography/assignments')}>
                                     <NavDropdown.Item>All</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
-                            <LinkContainer to="animation" active={location.pathname.startsWith('/animation')} style={{ fontFamily: 'Oswald-Medium' }}>
+                            <LinkContainer to="animation" onClick={handleMenuItemClick} active={location.pathname.startsWith('/animation')} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>Animation</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="about" active={location.pathname === '/about'} style={{ fontFamily: 'Oswald-Medium' }}>
+                            <LinkContainer to="about" onClick={handleMenuItemClick} active={location.pathname === '/about'} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>About</Nav.Link>
                             </LinkContainer>
-                            <LinkContainer to="contact" active={location.pathname === '/contact'} style={{ fontFamily: 'Oswald-Medium' }}>
+                            <LinkContainer to="contact" onClick={handleMenuItemClick} active={location.pathname === '/contact'} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>Contact</Nav.Link>
                             </LinkContainer>
                             <Navbar.Text>
