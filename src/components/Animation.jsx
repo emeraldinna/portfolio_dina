@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from '../data/animations.json';
-import { Fragment } from 'react';
+// import { Fragment } from 'react';
 
 const Animation = () => {
   const navigate = useNavigate();
@@ -25,11 +25,6 @@ const Animation = () => {
   }
 
   return (
-    <Fragment>
-      <div className="hero-wrapper">
-        <div className="hero-overlay" />
-        <Image className="hero-image" src="/baner-animation-test.jpg" fluid />
-      </div>
       <Container className="mt-5">
         <Row className="mb-4 justify-content-center">
           {data.map(project => (
@@ -74,8 +69,14 @@ const Animation = () => {
           ))}
         </Row>
       </Container>
-    </Fragment>
   );
 }
 
 export default Animation;
+
+// <Fragment>
+//   <div className="hero-wrapper">
+//     <div className="hero-overlay" />
+//     <Image className="hero-image" src="/baner-animation-test.jpg" fluid />
+//   </div>
+// </Fragment>

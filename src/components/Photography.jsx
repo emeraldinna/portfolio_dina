@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Fragment } from 'react';
+// import { Fragment } from 'react';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
@@ -41,11 +41,6 @@ const Photography = () => {
   }
 
   return (
-    <Fragment>
-      <div className="hero-wrapper">
-        <div className="hero-overlay" />
-        <Image className="hero-image" src="/baner-photography-test.jpg" fluid />
-      </div>
       <Container className="mt-5">
         <Row className="mb-4 justify-content-center">
           {data.map(project => (
@@ -96,8 +91,14 @@ const Photography = () => {
           />
         )}        
       </Container>
-    </Fragment>
   );
 }
 
 export default Photography;
+
+// <Fragment>
+//   <div className="hero-wrapper">
+//     <div className="hero-overlay" />
+//     <Image className="hero-image" src="/baner-photography-test.jpg" fluid />
+//   </div>
+// </Fragment>
