@@ -5,12 +5,12 @@ import Image from 'react-bootstrap/Image';
 
 const About = () => {
   return (
-    <Container style={{ textAlign: 'left' }} className="mt-5">
-      <Row>
-        <Col className="mb-5" xs={12} xl={4} md={6}>
-          <Image src="/images/dina_about.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
+    <Container style={{ textAlign: 'left' }} className="mt-5 pt-5">
+      <Row className="justify-content-center">
+        <Col className="mb-5" xs={12} sm={12} md={9} lg={6} xl={5} xxl={5}>
+          <Image src="/images/DB-about.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
         </Col>
-        <Col xs={12} xl={8} md={6}>
+        <Col xs={12} sm={12} md={12} lg={6} xl={7} xxl={7}>
           <p>Hi! I'm Dina Berkgaut, a photographer and animator based in Stockholm.</p>
           <p>By nature, I'm an observant and friendly person. (I am a benevolent observer by nature.)
             For me, photography is a way to capture a moment and preserve memories of the beauty of
