@@ -96,11 +96,10 @@ div.dropdown-menu.show {
   }
 }
 
-/* @media (min-width: 1200px) {
-  .hero-image {
-    max-height: 80% !important;
-    margin: 0 auto;
-  }
-} */
-
-
+/* section Drafts */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: space-between;
+}

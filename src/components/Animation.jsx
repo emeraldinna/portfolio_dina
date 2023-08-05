@@ -20,7 +20,7 @@ const Animation = () => {
   }
 
   const handleClick = (project) => {
-    console.log(project);
+    // console.log(project);
     navigate(`/animation/${project.id}`, { state: { project} });
   }
 
