@@ -41,5 +41,15 @@
         "largeSource": "",
         "type": "video",
         "videoUrl": "https://vimeo.com/553224912"
-      }    
+    },
+    {
+        "id": 7,
+        "animationId": 1,
+        "title": "Shelter 3 and Meadow game animation",
+        "smallSource": "shelter-test.png",
+        "largeSource": "",
+        "type": "video",
+        "videoUrl": "https://www.youtube.com/watch?v=I3Dso0dKnjg",
+        "projectLink": true
+    }        
 ]

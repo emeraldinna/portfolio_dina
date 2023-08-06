@@ -1,16 +1,38 @@
+import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ReactPlayer from 'react-player';
 import Button from 'react-bootstrap/Button';
+import data from '../data/animations.json';
 
 const SingleAnimation = () => {
     const location = useLocation();
-    const { project } = location.state;
-    // console.log(project);
-    const markup = { __html: project.description };
     const navigate = useNavigate();
+    // const { project } = location.state;
+    const [project, setProject] = useState(null);
+
+    useEffect(() => {
+        if (location.state && location.state.project) {
+            setProject(location.state.project);
+        } else {
+            const projectId = location.pathname.split('/').pop();
+            const foundProject = data.find((proj) => proj.id.toString() === projectId);
+
+            if (foundProject) {
+                setProject(foundProject);
+            } else {
+                navigate('/animation');
+            }
+        }
+    }, [location.state, location.pathname, navigate]);
+
+    if (!project) {
+        return <div>Loading...</div>;
+    }
+
+    const markup = { __html: project.description };
 
     const handleGoBack = () => {
         navigate(-1);
