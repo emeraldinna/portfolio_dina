@@ -76,5 +76,16 @@
             { "url" : "https://youtu.be/tteKMrJm3FQ", "title" : "draft - animation loop"}
         ],
         "drafts-section": {}
-    }    
+    },
+    {
+        "id": 6,
+        "alt": "",
+        "title": "",
+        "source": "https://vimeo.com/553224912",
+        "type": "small-project",
+        "description": "",
+        "link": "",
+        "videos": [],
+        "drafts-section": {}
+    }
 ]

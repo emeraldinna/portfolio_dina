@@ -95,7 +95,7 @@ const SingleAnimation = () => {
                         )}
                     </div>
                 )}
-                <Button variant="link" style={{ color: 'black', textAlign: 'left', fontFamily: 'Oswald-Bold' }} onClick={handleGoBack}>Go back</Button>
+                <Button variant="link" style={{ color: 'black', textAlign: 'left' }} onClick={handleGoBack}>Go back</Button>
             </Row>
         </Container>
     );
