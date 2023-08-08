@@ -5,7 +5,8 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from '../data/animations.json';
-import { Fragment } from 'react';
+import ReactPlayer from 'react-player';
+// import { Fragment } from 'react';
 
 const Animation = () => {
   const navigate = useNavigate();
@@ -20,22 +21,23 @@ const Animation = () => {
   }
 
   const handleClick = (project) => {
-    console.log(project);
-    navigate(`/animation/${project.id}`, { state: { project} });
+    // console.log(project);
+    if (project.type !== 'small-project') {
+      navigate(`/animation/${project.id}`, { state: { project} });
+    }
   }
 
   return (
-    <Fragment>
-      <div className="hero-wrapper">
-        <div className="hero-overlay" />
-        <Image className="hero-image" src="/baner-animation-test.jpg" fluid />
-      </div>
       <Container className="mt-5">
         <Row className="mb-4 justify-content-center">
           {data.map(project => (
             <Col key={project.id} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className="px-1 py-1 justify-content-center">
               <div
-                style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
+                style={{ 
+                  height: '300px', 
+                  overflow: 'hidden', 
+                  position: 'relative', 
+                }}
                 onClick={() => handleClick(project) }
                 onMouseEnter={() => handleMouseEnter(project)}
                 onMouseLeave={handleMouseLeave}
@@ -53,7 +55,22 @@ const Animation = () => {
                     cursor: 'pointer',
                   }}
                 />
-                {hoveredProject === project && (
+                {project.type === 'small-project' && (
+                  <ReactPlayer
+                    url={project.source}
+                    width="100%"
+                    height="100%"
+                    playing
+                    loop
+                    muted
+                    volume={0.5}
+                    playsinline
+                    style={{
+                      position: 'absolute',
+                    }}
+                  />
+                )}
+                {hoveredProject === project && project.alt && (
                   <div
                     style={{
                       position: 'absolute',
@@ -74,8 +91,14 @@ const Animation = () => {
           ))}
         </Row>
       </Container>
-    </Fragment>
   );
 }
 
 export default Animation;
+
+// <Fragment>
+//   <div className="hero-wrapper">
+//     <div className="hero-overlay" />
+//     <Image className="hero-image" src="/baner-animation-test.jpg" fluid />
+//   </div>
+// </Fragment>

@@ -1,7 +1,8 @@
 import ReactPlayer from 'react-player';
 
 const Overlay = ({ project, onClose }) => {
-    const { type, largeSource, videoUrl } = project;
+    const { type, largeSource, videoUrl, title, projectLink, animationId } = project;
+
     return (
         <div
             style={{
@@ -41,16 +42,35 @@ const Overlay = ({ project, onClose }) => {
                     style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
                 />
             ) : (
-                <ReactPlayer 
-                    url={videoUrl}
-                    controls
-                    playing
-                    muted
-                    light={true}
-                    loop={true}
-                    className="custom-react-player"
-                />    
-            )}
+                <div>
+                    <div style={{ position: 'relative' }}>
+                        <ReactPlayer 
+                            url={videoUrl}
+                            controls
+                            playing
+                            muted
+                            light={true}
+                            loop={true}
+                            className="custom-react-player"
+                        />
+                    </div> 
+                    {projectLink && (
+                        <a 
+                            href={`/animation/${animationId}`} 
+                            style={{ 
+                                color: 'white', 
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)', 
+                                textDecoration: 'underline',
+                                display: 'block',
+                                paddingTop: '20px',
+                                textAlign: 'left'
+                            }}
+                        >
+                            {title}
+                        </a>
+                    )}
+                </div>
+            )}                       
         </div>
 
     );
