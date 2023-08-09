@@ -29,9 +29,12 @@ const Photography = () => {
   const handleClick = (project) => {
     if (project.kind === "individual") {
       setSelectedProject(project);
-    }
-    else {
-      navigate(`/photography/${project.genre}/${project.id}`, { state: { project} });
+    } else if (project.parentProjectId) {
+      navigate(`/photography/assignments/${project.parentProjectId}`, {
+        state: { parentProjectId: project.parentProjectId }
+      });
+    } else {
+      navigate(`/photography/${project.genre}/${project.id}`, { state: {project} });
       // photography/:genre/:id
     }
   }
@@ -52,7 +55,7 @@ const Photography = () => {
               onMouseLeave={handleMouseLeave}
               >
                 <Image
-                  src={`/images/home-page/${project.smallSource}`}
+                  src={`/images/photography-page/${project.mainImage}`}
                   fluid
                   style={{
                     width: '100%',
