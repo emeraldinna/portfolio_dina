@@ -25,7 +25,7 @@ const PhotographyByGenre = () => {
                         <div
                             style={{ height: '300px', overflow: 'hidden', position: 'relative' }}>
                             <Image
-                            src={`/images/home-page/${project.smallSource}`}
+                            src={`/images/photography-page/${project.mainImage}`}
                             fluid
                             style={{
                               width: '100%',
