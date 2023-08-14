@@ -11,11 +11,11 @@ import data from '../data/photos.json';
 const SinglePhotoProject = () => {
     const location = useLocation();
     const { project, parentProjectId } = location.state;
-    console.log(project);
-    console.log(parentProjectId);
+    // console.log(project);
+    // console.log(parentProjectId);
 
     const parentProject = data.find(project => project.id === parseInt(parentProjectId));
-    console.log(parentProject);
+    // console.log(parentProject);
 
     const navigate = useNavigate();
 
@@ -83,6 +83,7 @@ const SinglePhotoProject = () => {
                 <PhotoOverlay
                     images={(project ? project.related : parentProject.related)}
                     activeIndex={selectedImageIndex}
+                    setActiveIndex={setSelectedImageIndex}
                     onClose={closeImageOverlay}
                 />
             )}
