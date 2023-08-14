@@ -142,8 +142,8 @@ div.dropdown-menu.show {
 
 .photo-slide {
   display: none;
-  max-height: 80vh;
-  max-width: 90%;
+  max-height: 70vh;
+  max-width: 80%;
   object-fit: contain;
 }
 
@@ -174,4 +174,24 @@ div.dropdown-menu.show {
 
 svg {
   background: transparent;
+}
+
+.photo-markers {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  background: transparent;
+}
+
+.photo-marker {
+  font-size: 14px;
+  margin: 0 5px;
+  color: #898686;
+  cursor: pointer;
+}
+
+.photo-marker.active {
+  color: #fff;
+  font-size: 18px;
+  margin-top: -3px;
 }

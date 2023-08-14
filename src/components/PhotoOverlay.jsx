@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaCircle } from 'react-icons/fa';
 
-const PhotoOverlay = ({ images, onClose }) => {
-    const [activeIndex, setActiveIndex] = useState(0);
+const PhotoOverlay = ({ images, activeIndex, setActiveIndex, onClose }) => {
     console.log(images);
 
     const handlePrev = () => {
@@ -34,6 +32,15 @@ const PhotoOverlay = ({ images, onClose }) => {
                     <FaArrowRight size={24} />
                 </button>
             </div>
+            <div className="photo-markers">
+                {images.map((item, index) => (
+                    <FaCircle
+                        key={index}
+                        className={`photo-marker ${index === activeIndex ? 'active' : ''}`}
+                        onClick={() => setActiveIndex(index)}
+                    />
+                ))}
+            </div>        
         </div>
     );
 };
