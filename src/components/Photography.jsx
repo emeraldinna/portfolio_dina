@@ -91,6 +91,7 @@ const Photography = () => {
           <Overlay
             project={selectedProject}
             onClose={handleOverlayClose}
+            imageFolderPath="/images/photography-page/"
           />
         )}        
       </Container>
