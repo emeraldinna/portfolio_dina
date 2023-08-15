@@ -74,6 +74,7 @@ const Home = () => {
         <Overlay
           project={selectedProject}
           onClose={handleOverlayClose}
+          imageFolderPath="/images/home-page/"
         />
       )}
     </Container>

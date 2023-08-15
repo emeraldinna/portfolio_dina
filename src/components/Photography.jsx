@@ -30,7 +30,7 @@ const Photography = () => {
     if (project.kind === "individual") {
       setSelectedProject(project);
     } else if (project.parentProjectId) {
-      navigate(`/photography/assignments/${project.parentProjectId}`, {
+      navigate(`/photography/${project.genre}/${project.parentProjectId}`, {
         state: { parentProjectId: project.parentProjectId }
       });
     } else {
@@ -91,6 +91,7 @@ const Photography = () => {
           <Overlay
             project={selectedProject}
             onClose={handleOverlayClose}
+            imageFolderPath="/images/photography-page/"
           />
         )}        
       </Container>

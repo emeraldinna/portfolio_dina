@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player';
 
-const Overlay = ({ project, onClose }) => {
+const Overlay = ({ project, onClose, imageFolderPath }) => {
     const { type, largeSource, videoUrl, title, projectLink, animationId } = project;
 
     return (
@@ -37,7 +37,7 @@ const Overlay = ({ project, onClose }) => {
             </button>
             {type === 'photo' ? (
                 <img
-                    src={`/images/home-page/${largeSource}`}
+                    src={`${imageFolderPath}${largeSource}`}
                     alt="Fullsize"
                     style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
                 />
