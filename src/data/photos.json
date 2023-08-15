@@ -3,8 +3,63 @@
         "id": 1,
         "alt": "",
         "title": "",
-        "mainImage": "05.jpg",
-        "largeSource": "05a.jpg",
+        "mainImage": "IMG_1060 big.jpg",
+        "largeSource": "IMG_1060 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 2,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_1105 big.jpg",
+        "largeSource": "IMG_1105 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 3,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_1109 big.jpg",
+        "largeSource": "IMG_1109 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 4,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_1204 big.jpg",
+        "largeSource": "IMG_1204 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 5,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_2430 big.jpg",
+        "largeSource": "IMG_2430 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 6,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_4329 big.jpg",
+        "largeSource": "IMG_4329 big.jpg",
         "description": "",
         "type" : "photo",
         "kind": "individual",
@@ -12,6 +67,72 @@
     },
     {
         "id": 7,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_4540 big.jpg",
+        "largeSource": "IMG_4540 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 8,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_5521 big.jpg",
+        "largeSource": "IMG_5521 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 9,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_7147 big.jpg",
+        "largeSource": "IMG_7147 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 10,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_7216 big.jpg",
+        "largeSource": "IMG_7216 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 11,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_7289 big.jpg",
+        "largeSource": "IMG_7289 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 12,
+        "alt": "",
+        "title": "",
+        "mainImage": "IMG_9090 big.jpg",
+        "largeSource": "IMG_9090 big.jpg",
+        "description": "",
+        "type" : "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 13,
         "alt": "",
         "title": "vera assignment",
         "mainImage": "IMG_8401 small.jpg",
@@ -42,7 +163,7 @@
         "description": "TEST"
     },
     {
-        "id": 8,
+        "id": 13,
         "alt": "",
         "title": "vera assignment extra foto from project",
         "mainImage": "IMG_7933-small.jpg",
@@ -50,6 +171,6 @@
         "type" : "photo",
         "kind": "project",
         "genre": "assignments",
-        "parentProjectId": "7"
+        "parentProjectId": "13"
     }        
 ]
