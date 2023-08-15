@@ -37,7 +37,7 @@ const Overlay = ({ project, onClose }) => {
             </button>
             {type === 'photo' ? (
                 <img
-                    src={`/images/home-page/${largeSource}`}
+                    src={`/images/photography-page/${largeSource}`}
                     alt="Fullsize"
                     style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
                 />
