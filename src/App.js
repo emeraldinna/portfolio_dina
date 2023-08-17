@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import MainLayout from './layouts/MainLayout';
 import Home from './components/Home';
 import './App.css';
@@ -14,6 +16,11 @@ import SingleAnimation from './components/SingleAnimation';
 import SinglePhotoProject from './components/SinglePhotoProject';
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-K9WEQGK8LS');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="App">
