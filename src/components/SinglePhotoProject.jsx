@@ -43,7 +43,7 @@ const SinglePhotoProject = () => {
                             onClick={() => openImageOverlay(index)}
                         >
                             <Image
-                                src={`/images/photography-page/${item.smallSource}`}
+                                src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${item.smallSource}`}
                                 fluid
                                 style={{
                                     width: '100%',
