@@ -38,7 +38,7 @@ const Home = () => {
               onMouseLeave={handleMouseLeave}
             >
               <Image
-                src={`/images/home-page/${project.smallSource}`}
+                src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/${project.smallSource}`}
                 fluid
                 style={{
                   width: '100%',
@@ -74,7 +74,7 @@ const Home = () => {
         <Overlay
           project={selectedProject}
           onClose={handleOverlayClose}
-          imageFolderPath="/images/home-page/"
+          imageFolderPath="https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/"
         />
       )}
     </Container>

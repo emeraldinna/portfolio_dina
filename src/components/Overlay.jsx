@@ -38,7 +38,7 @@ const Overlay = ({ project, onClose, imageFolderPath }) => {
             {type === 'photo' ? (
                 <img
                     src={`${imageFolderPath}${largeSource}`}
-                    alt="Fullsize"
+                    alt={title}
                     style={{ maxWidth: '90%', maxHeight: '90%', objectFit: 'contain' }}
                 />
             ) : (

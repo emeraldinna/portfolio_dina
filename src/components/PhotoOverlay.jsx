@@ -1,7 +1,7 @@
 import { FaArrowLeft, FaArrowRight, FaCircle } from 'react-icons/fa';
 
 const PhotoOverlay = ({ images, activeIndex, setActiveIndex, onClose }) => {
-    console.log(images);
+    // console.log(images);
 
     const handlePrev = () => {
         setActiveIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
@@ -20,7 +20,7 @@ const PhotoOverlay = ({ images, activeIndex, setActiveIndex, onClose }) => {
                 {images.map((item, index) => (
                     <img
                         key={index}
-                        src={`/images/photography-page/${item.largeSource}`}
+                        src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${item.largeSource}`}
                         alt={`${index}`}
                         className={`photo-slide ${index === activeIndex ? 'active' : ''}`}
                     />

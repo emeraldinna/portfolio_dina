@@ -18,7 +18,7 @@ const PhotographyByGenre = () => {
         setProjects(filteredProjects);
     }, [genre]);
 
-    console.log(projects);
+    // console.log(projects);
 
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
@@ -48,7 +48,7 @@ const PhotographyByGenre = () => {
                             onClick={() => openImageOverlay(index)}
                         >
                             <Image
-                            src={`/images/photography-page/${project.mainImage}`}
+                            src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${project.mainImage}`}
                             fluid
                             style={{
                               width: '100%',
