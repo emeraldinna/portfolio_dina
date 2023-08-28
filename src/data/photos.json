@@ -138,7 +138,7 @@
         "mainImage": "IMG_8401 small.jpg",
         "type" : "photo",
         "kind": "project",
-        "genre": "assignments",
+        "genre": "stories",
         "related": [
             {"smallSource": "IMG_7875-small.jpg", "largeSource": "IMG_7875 big.jpg"},
             {"smallSource": "IMG_7902-small.jpg", "largeSource": "IMG_7902 big.jpg"},
@@ -170,7 +170,7 @@
         "description": "",
         "type" : "photo",
         "kind": "project",
-        "genre": "assignments",
+        "genre": "stories",
         "parentProjectId": "13"
-    }        
+    } 
 ]

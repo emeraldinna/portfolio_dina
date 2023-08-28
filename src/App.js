@@ -4,7 +4,6 @@ import MainLayout from './layouts/MainLayout';
 import Home from './components/Home';
 import './App.css';
 import './custom-styles.css';
-import Photography from './components/Photography';
 import PhotographyByGenre from './components/PhotographyByGenre';
 import Animation from './components/Animation';
 import About from './components/About';
@@ -23,7 +22,6 @@ function App() {
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
-            <Route path="photography" element={<Photography />} />
             <Route path="photography/:genre" element={<PhotographyByGenre />} />
             <Route path="photography/:genre/:id" element={<SinglePhotoProject />} />
             <Route path="animation" element={<Animation />} />

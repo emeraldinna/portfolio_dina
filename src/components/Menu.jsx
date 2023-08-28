@@ -17,7 +17,7 @@ const iconStyle = { color: "black", size: "24px" };
 const Menu = () => {
     const location = useLocation();
     const [expanded, setExpanded] = useState(false);
-    
+
     const handleMenuToggle = () => {
         setExpanded(!expanded);
     };
@@ -25,14 +25,14 @@ const Menu = () => {
     const handleMenuItemClick = () => {
         setExpanded(false);
     };
-    
+
     const isPhotographyActive = location.pathname.includes('/photography');
 
     return (
         <Fragment>
-            <Navbar 
-                expand="lg" 
-                fixed="top" 
+            <Navbar
+                expand="lg"
+                fixed="top"
                 className="custom-navbar"
                 expanded={expanded}
                 onToggle={handleMenuToggle}
@@ -46,27 +46,20 @@ const Menu = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav>
-                            <NavDropdown 
-                                title="Photography" 
+                            <NavDropdown
+                                title="Photography"
                                 id="basic-nav-dropdown"
-                                className={`py-1 ${isPhotographyActive ? 'active' : ''}`} 
+                                className={`py-1 ${isPhotographyActive ? 'active' : ''}`}
                                 style={{ fontFamily: 'Oswald-Medium' }}
                             >
                                 <LinkContainer to="photography/people" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/people')}>
                                     <NavDropdown.Item>People</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/events" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/events')}>
-                                    <NavDropdown.Item>Events</NavDropdown.Item>
+                                <LinkContainer to="photography/stories" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/stories')}>
+                                    <NavDropdown.Item>Stories</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/places" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/places')}>
-                                    <NavDropdown.Item>Places</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to="photography/assignments" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/assignments')}>
-                                    <NavDropdown.Item>Assignments</NavDropdown.Item>
-                                </LinkContainer> 
-                                <NavDropdown.Divider />
-                                <LinkContainer to="photography" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography') && !location.pathname.startsWith('/photography/people') && !location.pathname.startsWith('/photography/events') && !location.pathname.startsWith('/photography/places') && !location.pathname.startsWith('/photography/assignments')}>
-                                    <NavDropdown.Item>All</NavDropdown.Item>
+                                <LinkContainer to="photography/things" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/things')}>
+                                    <NavDropdown.Item>Things</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
                             <LinkContainer to="animation" onClick={handleMenuItemClick} active={location.pathname.startsWith('/animation')} style={{ fontFamily: 'Oswald-Medium' }}>
