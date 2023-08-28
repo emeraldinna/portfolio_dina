@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from '../data/photos.json';
-import PhotoOverlay from './PhotoOverlay'; 
+import PhotoOverlay from './PhotoOverlay';
 
 const PhotographyByGenre = () => {
     const { genre } = useParams();
@@ -18,8 +18,6 @@ const PhotographyByGenre = () => {
         setProjects(filteredProjects);
     }, [genre]);
 
-    // console.log(projects);
-
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
     const openImageOverlay = (index) => {
@@ -27,12 +25,11 @@ const PhotographyByGenre = () => {
         if (selectedProject.kind === "individual") {
             setSelectedImageIndex(index);
         } else if (selectedProject.kind === "project" && selectedProject.parentProjectId) {
-            navigate(`/photography/${selectedProject.genre}/${selectedProject.parentProjectId}`, {state: { parentProjectId: selectedProject.parentProjectId } });
+            navigate(`/photography/${selectedProject.genre}/${selectedProject.parentProjectId}`, { state: { parentProjectId: selectedProject.parentProjectId } });
         } else if (selectedProject.kind === "project") {
             navigate(`/photography/${selectedProject.genre}/${selectedProject.id}`, { state: { project: selectedProject } });
         }
     };
-    
 
     const closeImageOverlay = () => {
         setSelectedImageIndex(null);
@@ -48,18 +45,18 @@ const PhotographyByGenre = () => {
                             onClick={() => openImageOverlay(index)}
                         >
                             <Image
-                            src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${project.mainImage}`}
-                            fluid
-                            style={{
-                              width: '100%',
-                              height: '100%',
-                              objectFit: 'cover',
-                              position: 'absolute',
-                              top: '0',
-                              left: '0',
-                              cursor: 'pointer',
-                            }}
-                          />
+                                src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${project.mainImage}`}
+                                fluid
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    objectFit: 'cover',
+                                    position: 'absolute',
+                                    top: '0',
+                                    left: '0',
+                                    cursor: 'pointer',
+                                }}
+                            />
                         </div>
                     </Col>
                 ))}
@@ -71,7 +68,7 @@ const PhotographyByGenre = () => {
                     setActiveIndex={setSelectedImageIndex}
                     onClose={closeImageOverlay}
                 />
-            )}            
+            )}
         </Container>
     )
 }
