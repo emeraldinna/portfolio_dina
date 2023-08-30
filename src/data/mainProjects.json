@@ -51,5 +51,12 @@
         "type": "video",
         "videoUrl": "https://www.youtube.com/watch?v=I3Dso0dKnjg",
         "projectLink": true
+    },
+    {   
+        "id": 8,
+        "title": "Vera Z. Gutman's textile art",
+        "smallSource": "IMG_8370-small.jpg", 
+        "largeSource": "IMG_8370 big.jpg",
+        "type": "photo"
     }        
 ]

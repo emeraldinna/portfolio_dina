@@ -6,24 +6,16 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import PhotoOverlay from './PhotoOverlay';
-import data from '../data/photos.json';
 
 const SinglePhotoProject = () => {
     const location = useLocation();
-    const { project, parentProjectId } = location.state;
-    // console.log(project);
-    // console.log(parentProjectId);
-
-    const parentProject = data.find(project => project.id === parseInt(parentProjectId));
-    // console.log(parentProject);
-
+    const { project } = location.state;
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
     const navigate = useNavigate();
 
     const handleGoBack = () => {
         navigate(-1);
     }
-
-    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
     const openImageOverlay = (index) => {
         setSelectedImageIndex(index);
@@ -33,11 +25,31 @@ const SinglePhotoProject = () => {
         setSelectedImageIndex(null);
     };
 
+    const goBackButton = (
+        <Button variant='link' style={{ color: 'black', textAlign: 'left' }} onClick={handleGoBack}>
+          Go back
+        </Button>
+    );
+
     return (
-        <Container className="mt-5">
-            <Row className="mb-4 justify-content-center">
-                {(project ? project.related : parentProject.related).map((item, index) => (
-                    <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className="px-1 py-1 justify-content-center" >
+        <Container className='mt-5'>
+            <Row className='mb-4'>
+                <Col xs={12} md={10} className='mb-4 mb-md-0'>
+                    <h2 className='text-uppercase fw-bold' style={{ fontFamily: 'Oswald-SemiBold', textAlign: 'left' }}>
+                        {(project && project.title)}
+                    </h2>
+                </Col>
+                <Col xs={12} md={2} className='d-flex justify-content-md-end align-items-center' style={{ paddingLeft: '0px' }}>
+                    {goBackButton}
+                </Col>
+                <Col xs={12} className='mt-4'>
+                    <p style={{ textAlign: 'left' }}>{(project && project.summary)}</p>
+                </Col>
+                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>Official Website</p></a>}
+            </Row>    
+            <Row className='mb-4 justify-content-center'>
+                {(project && project.related).map((item, index) => (
+                    <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1 justify-content-center' >
                         <div
                             style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
                             onClick={() => openImageOverlay(index)}
@@ -54,34 +66,22 @@ const SinglePhotoProject = () => {
                                     left: '0',
                                     cursor: 'pointer',
                                 }}
+                                alt={item.alt}
                             />
                         </div>
                     </Col>
                 ))}
             </Row>
-            <Row className="mb-4 justify-content-center">
-                <div>
-                    <h2 className="text-uppercase fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>
-                        {(project ? project.title : parentProject.title)}
-                    </h2>
-                    <p style={{ textAlign: 'left' }}>{(project ? project.description : parentProject.description)}</p>
-                    <p style={{ textAlign: 'left' }}>There are many variations of passages of Lorem Ipsum available, but the majority 
-                        have suffered alteration in some form, by injected humour, or randomised words which 
-                        don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
-                        you need to be sure there isn't anything embarrassing hidden in the middle of text. 
-                        All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
-                        making this the first true generator on the Internet. It uses a dictionary of over 200 Latin 
-                        words, combined with a handful of model sentence structures, to generate Lorem Ipsum which 
-                        looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
-                        injected humour, or non-characteristic words etc.
-                    </p>
+            <Row className='mb-4 justify-content-center'>
+                <div style={{ textAlign: 'left' }}>
+                    {project && project.description && <p style={{ textAlign: 'left' }}>{project.description}</p>}
+                    <div className='mb-4' />
+                    {goBackButton}
                 </div>
-                <div className="mb-4" />
-                <Button variant="link" style={{ color: 'black', textAlign: 'left' }} onClick={handleGoBack}>Go back</Button>
-            </Row>
+            </Row>    
             {selectedImageIndex !== null && (
                 <PhotoOverlay
-                    images={(project ? project.related : parentProject.related)}
+                    images={(project && project.related)}
                     activeIndex={selectedImageIndex}
                     setActiveIndex={setSelectedImageIndex}
                     onClose={closeImageOverlay}
