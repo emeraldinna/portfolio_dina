@@ -85,6 +85,7 @@ const SinglePhotoProject = () => {
                     activeIndex={selectedImageIndex}
                     setActiveIndex={setSelectedImageIndex}
                     onClose={closeImageOverlay}
+                    imageFolderPath='https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/'
                 />
             )}
         </Container>
