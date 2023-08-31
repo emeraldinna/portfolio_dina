@@ -58,9 +58,6 @@ const Menu = () => {
                                 <LinkContainer to="photography/stories" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/stories')}>
                                     <NavDropdown.Item>Stories</NavDropdown.Item>
                                 </LinkContainer>
-                                <LinkContainer to="photography/things" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/things')}>
-                                    <NavDropdown.Item>Things</NavDropdown.Item>
-                                </LinkContainer>
                             </NavDropdown>
                             <LinkContainer to="animation" onClick={handleMenuItemClick} active={location.pathname.startsWith('/animation')} style={{ fontFamily: 'Oswald-Medium' }}>
                                 <Nav.Link>Animation</Nav.Link>
@@ -109,3 +106,8 @@ const Menu = () => {
 }
 
 export default Menu;
+
+// Enable when it will be needed!
+// <LinkContainer to="photography/things" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/things')}>
+//     <NavDropdown.Item>Things</NavDropdown.Item>
+// </LinkContainer>
