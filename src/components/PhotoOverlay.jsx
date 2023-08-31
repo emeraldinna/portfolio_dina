@@ -1,13 +1,32 @@
+import { useEffect, useCallback } from 'react';
 import { FaArrowLeft, FaArrowRight, FaCircle } from 'react-icons/fa';
 
 const PhotoOverlay = ({ images, activeIndex, setActiveIndex, onClose, imageFolderPath }) => {
-    const handlePrev = () => {
+    const handlePrev = useCallback(() => {
         setActiveIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
+    }, [images.length, setActiveIndex]);
 
-    const handleNext = () => {
+    const handleNext = useCallback(() => {
         setActiveIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
+    }, [images.length, setActiveIndex]);
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                onClose();
+            } else if (event.key === 'ArrowLeft') {
+                handlePrev();
+            } else if (event.key === 'ArrowRight') {
+                handleNext();
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [onClose, handlePrev, handleNext]);
 
     const titleStyle = {
         color: 'white',
