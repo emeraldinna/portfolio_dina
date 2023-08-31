@@ -35,9 +35,9 @@ const SinglePhotoProject = () => {
         <Container className='mt-5'>
             <Row className='mb-4'>
                 <Col xs={12} md={10} className='mb-4 mb-md-0'>
-                    <h2 className='text-uppercase fw-bold' style={{ fontFamily: 'Oswald-SemiBold', textAlign: 'left' }}>
+                    <h1 className='fw-bold' style={{ fontFamily: 'Oswald-SemiBold', textAlign: 'left' }}>
                         {(project && project.title)}
-                    </h2>
+                    </h1>
                 </Col>
                 <Col xs={12} md={2} className='d-flex justify-content-md-end align-items-center' style={{ paddingLeft: '0px' }}>
                     {goBackButton}
