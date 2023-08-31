@@ -5,7 +5,8 @@
         "title": "Shelter 3 & Meadow",
         "source": "shelter-test.png",
         "type": "game",
-        "description": "I worked at Might And Delight studio as a junior animator at Shelter 3 and Meadow projects and made keyframe animations for elephants and elephant babies, crocodiles, buffaloes for Shelter 3 and more animations for elephant babies for Meadows . All animation made in Motion Builder.",
+        "summary": "I worked at Might And Delight studio as a junior animator at Shelter 3 and Meadow projects and made keyframe animations for elephants and elephant babies, crocodiles, buffaloes for Shelter 3 and more animations for elephant babies for Meadows . All animation made in Motion Builder.",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
         "videos" : [
             { "url" : "https://youtu.be/UmqrVpFa2OU", "title" : "Shelter 3 Teaser"},
             { "url" : "https://youtu.be/U_IlNFERdzE", "title" : "Shelter 3 Launch Trailer"},
@@ -26,7 +27,8 @@
         "title": "Moonzy (Luntik and his friends): TV series for pre-school children.",
         "source": "moonzy.jpg",
         "type": "tv",
-        "description": "I started my work at Studio Melnitsa, St.Petersburg on the project Moonzy since it's beginning in 2005 and worked on it until 2008. First seasons were made in 2D cutout technique (After Effects). Character design and backgrounds were made in Photoshop.",
+        "summary": "I started my work at Studio Melnitsa, St.Petersburg on the project Moonzy since it's beginning in 2005 and worked on it until 2008. First seasons were made in 2D cutout technique (After Effects). Character design and backgrounds were made in Photoshop.",
+        "description": "",
         "link": "https://www.youtube.com/user/luntik",
         "videos": [
             { "url" : "https://youtu.be/PL8NcXYbzu0", "title" : "Dandelion my animation reel" },
@@ -40,6 +42,7 @@
         "title": "The Barkers (Barboskins): TV series for children",
         "source": "barkers.jpg",
         "type": "tv",
+        "summary": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.",
         "description": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.<br><p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple lighting, complex lighting together with lighting supervisor</li><li>Collaboration with Dynamic Effects and with Textures and Backgrounds departments</li><li>Final rendering (Pixar Renderman)</li><li>Compositing, 2D effects (After Effects, Premier, basic Nuke)</li><li>(Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop)</li></ul><br>As a visualizer I was responsible for finding all kinds of visual and animation problems, logical discrepancies etc. Fixing this required tight collaboration with episode director, artistic director, lead animator, technical director and film editor.",
         "link": "https://www.youtube.com/user/barboskinyonline",
         "videos": [
@@ -53,6 +56,7 @@
         "title": "Huba-bubba commercials",
         "source": "huba-bubba.jpg",
         "type": "tv",
+        "summary": "After studying at St. Petersburg State University of Film and Television I started working as a Character Assistant on 'Hubba-bubba' commercials by Visotsky&Sikorsky Animation Studio in 2004 - 2005 (internship, later employment).",
         "description": "<p>After studying at St. Petersburg State University of Film and Television I started working as a Character Assistant on 'Hubba-bubba' commercials by Visotsky&Sikorsky Animation Studio in 2004 - 2005 (internship, later employment).</p><p>It was good old clay animation! My duty was to again and again sculpt plasticine characters for stop-motion animation.</p>",
         "link": "",
         "videos": [
@@ -67,6 +71,7 @@
         "title": "Animation with kids",
         "source": "flower-test.png",
         "type": "stop-motion",
+        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed gravida neque. Quisque et nisl suscipit, sodales turpis ut, bibendum neque. Fusce faucibus ante tortor, consequat tincidunt lectus molestie ac. Ut mattis, ante blandit egestas facilisis, mauris massa aliquet nisl, sed congue nibh enim eget elit. ",
         "description": "",
         "link": "",
         "videos": [
@@ -75,17 +80,6 @@
             { "url" : "https://youtu.be/hVwyHjAmmzM", "title" : "draft - test turtle" },
             { "url" : "https://youtu.be/tteKMrJm3FQ", "title" : "draft - animation loop"}
         ],
-        "drafts-section": {}
-    },
-    {
-        "id": 6,
-        "alt": "",
-        "title": "",
-        "source": "https://vimeo.com/553224912",
-        "type": "small-project",
-        "description": "",
-        "link": "",
-        "videos": [],
         "drafts-section": {}
     }
 ]

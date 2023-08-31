@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "alt": "theatrical image",
         "title": "theatrical image",
         "smallSource": "01.jpg",
         "largeSource": "01a.jpg",
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "alt": "pigeons",
         "title": "pigeons",
         "smallSource": "02.jpg",
         "largeSource": "02a.jpg",
@@ -15,6 +17,7 @@
     },
     {
         "id": 3,
+        "alt": "dove sits on a lantern",
         "title": "dove sits on a lantern",
         "smallSource": "03.jpg",
         "largeSource": "03.jpg",
@@ -22,6 +25,7 @@
     },
     {
         "id": 4,
+        "alt": "girl in the water",
         "title": "girl in the water",
         "smallSource": "04.jpg",
         "largeSource": "04a.jpg",
@@ -29,27 +33,18 @@
     },
     {
         "id": 5,
+        "alt": "girl dressed as a cow on a bike",
         "title": "girl dressed as a cow on a bike",
         "smallSource": "05.jpg",
         "largeSource": "05a.jpg",
         "type": "photo"        
     },
-    {
-        "id": 6,
-        "title": "stop-motion animation",
-        "smallSource": "stop-animation.png",
-        "largeSource": "",
-        "type": "video",
-        "videoUrl": "https://vimeo.com/553224912"
-    },
-    {
-        "id": 7,
-        "animationId": 1,
-        "title": "Shelter 3 and Meadow game animation",
-        "smallSource": "shelter-test.png",
-        "largeSource": "",
-        "type": "video",
-        "videoUrl": "https://www.youtube.com/watch?v=I3Dso0dKnjg",
-        "projectLink": true
+    {   
+        "id": 8,
+        "alt": "Vera Z. Gutman's textile art",
+        "title": "Vera Z. Gutman's textile art",
+        "smallSource": "IMG_8370-small.jpg", 
+        "largeSource": "IMG_8370 big.jpg",
+        "type": "photo"
     }        
 ]

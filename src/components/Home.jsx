@@ -1,41 +1,38 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import data from '../data/mainProjects.json';
-import Overlay from './Overlay';
+import PhotoOverlay from './PhotoOverlay';
 
 const Home = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+  const [projects, setProjects] = useState(null);
 
-  const handleClick = (project) => {
-    setSelectedProject(project);
-  }
+  useEffect(() => {
+    setProjects(data);
+  }, []);
 
-  const handleOverlayClose = () => {
-    setSelectedProject(null);
-  }
+  const openImageOverlay = (index) => {
+    const selectedProject = projects[index];
+    if (selectedProject) {
+      setSelectedImageIndex(index);
+    }
+  };
 
-  const handleMouseEnter = (project) => {
-    setHoveredProject(project);
-  }
-
-  const handleMouseLeave = () => {
-    setHoveredProject(null);
-  }
+  const closeImageOverlay = () => {
+    setSelectedImageIndex(null);
+  };
 
   return (
-    <Container className="mt-5">
-      <Row className="mb-4 justify-content-center">
-        {data.map(project => (
-          <Col key={project.id} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className="px-1 py-1">
+    <Container className='mt-5'>
+      <Row className='mb-4 justify-content-center'>
+        {projects && projects.map((project, index) => (
+          <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1'>
             <div
               style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
-              onClick={() => handleClick(project)}
-              onMouseEnter={() => handleMouseEnter(project)}
-              onMouseLeave={handleMouseLeave}
+              onClick={() => openImageOverlay(index)}
             >
               <Image
                 src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/${project.smallSource}`}
@@ -50,31 +47,17 @@ const Home = () => {
                   cursor: 'pointer',
                 }}
               />
-              {hoveredProject === project && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    bottom: '0',
-                    left: '0',
-                    width: '100%',
-                    background: 'rgba(0, 0, 0, 0.8)',
-                    color: '#fff',
-                    padding: '8px',
-                    textAlign: 'center',
-                  }}
-                >
-                  {project.title}
-                </div>
-              )}
             </div>
           </Col>
         ))}
       </Row>
-      {selectedProject && (
-        <Overlay
-          project={selectedProject}
-          onClose={handleOverlayClose}
-          imageFolderPath="https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/"
+      {selectedImageIndex !== null && (
+        <PhotoOverlay
+          images={projects}
+          activeIndex={selectedImageIndex}
+          setActiveIndex={setSelectedImageIndex}
+          onClose={closeImageOverlay}
+          imageFolderPath='https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/'
         />
       )}
     </Container>
@@ -82,5 +65,4 @@ const Home = () => {
 };
 
 export default Home;
-
 
