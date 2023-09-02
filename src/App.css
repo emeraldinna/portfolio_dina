@@ -1,5 +1,9 @@
-* {
+/* * {
   background-color: #e9ecef;
+} */
+
+body {
+  background-color: #e9ecef !important;
 }
 
 .App {
@@ -13,6 +17,7 @@
 .custom-navbar {
   z-index: 100;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #e9ecef;
 }
 
 .navbar-placeholder {
@@ -54,47 +59,6 @@ div.dropdown-menu.show {
   background-color: #abadae;
 }
 
-/* Overlay */
-.custom-react-player .react-player__play-icon {
-  background: none !important;
-  box-shadow: none !important;
-  color: white !important;
-}
-
-/* Hero-image */ /* DELETE if it will not be used */
-/* .hero-wrapper {
-  position: relative;
-  height: auto;
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.7;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 767px) {
-  .hero-wrapper {
-    display: none;
-  }
-
-  .hero-image {
-    display: none;
-  }
-} */
-
 /* section Drafts */
 .grid-container {
   display: grid;
@@ -110,88 +74,21 @@ div.dropdown-menu.show {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   z-index: 9999;
 }
 
 .close-button {
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: 5px;
+  right: 5px;
   background: none;
   border: none;
-  color: #fff;
+  color: #bbb;
   font-size: 42px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.photo-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: transparent;
-  width: 100%;
-  height: 70vh;
-}
-
-.photo-slide {
-  display: none;
-  max-height: 70vh;
-  max-width: 80%;
-  object-fit: contain;
-}
-
-.photo-slide.active {
-  display: block;
-}
-
-.prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.close-button:hover {
   color: #fff;
-  font-size: 24px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-}
-
-svg {
-  background: transparent;
-}
-
-.photo-markers {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  background: transparent;
-}
-
-.photo-marker {
-  font-size: 14px;
-  margin: 0 5px;
-  color: #898686;
-  cursor: pointer;
-}
-
-.photo-marker.active {
-  color: #fff;
-  font-size: 18px;
-  margin-top: -3px;
 }
