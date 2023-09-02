@@ -7651,6 +7651,11 @@ react-ga4@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-ga4/-/react-ga4-2.1.0.tgz#56601f59d95c08466ebd6edfbf8dede55c4678f9"
   integrity sha512-ZKS7PGNFqqMd3PJ6+C2Jtz/o1iU9ggiy8Y8nUeksgVuvNISbmrQtJiZNvC/TjDsqD0QlU5Wkgs7i+w9+OjHhhQ==
 
+react-gallery-carousel@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/react-gallery-carousel/-/react-gallery-carousel-0.4.0.tgz#c1cb415b7b40e22de9cfd5d4ec5a9c944f21f4d1"
+  integrity sha512-ptlQdSg13Fu2UlmJiN9RMWNLH1U/lSBu/Gjz4xDouNjFpITi42AijPyu7F/KLbzVSTNlN7SqKaLC4//UPnBepg==
+
 react-hook-form@^7.45.0:
   version "7.45.0"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.45.0.tgz#df2bbc8cee598855a63ba446e0bb06f7c8120ccf"

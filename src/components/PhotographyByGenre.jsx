@@ -62,6 +62,7 @@ const PhotographyByGenre = () => {
                                         left: '0',
                                         cursor: 'pointer',
                                     }}
+                                    alt={project.alt}
                                 />
                             </div>
                             {project.kind === 'project' && (
