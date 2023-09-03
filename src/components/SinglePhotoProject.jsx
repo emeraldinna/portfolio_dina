@@ -45,8 +45,9 @@ const SinglePhotoProject = () => {
                 <Col xs={12} className='mt-4'>
                     <p style={{ textAlign: 'left' }}>{(project && project.summary)}</p>
                 </Col>
-                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>Official Website</p></a>}
+                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>{project.linkDescription || "Official Website"}</p></a>}
             </Row>    
+
             <Row className='mb-4 justify-content-center'>
                 {(project && project.related).map((item, index) => (
                     <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1 justify-content-center' >

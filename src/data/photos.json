@@ -160,8 +160,9 @@
             {"smallSource": "IMG_8401a-small.jpg", "largeSource": "IMG_8401a big.jpg"},
             {"smallSource": "IMG_8414-small.jpg", "largeSource": "IMG_8414 big.jpg"}
         ],        
-        "summary": "A short photo story dedicated to textileart of my old friend Vera Z. Gutman. Vera, a felt and textile artist living in Blekinge, Sweden, crafts everyday items infused with a touch of fairytale magic in each piece, conveying a sense of being firmly rooted and connected to the deep beauty of Nordic nature.",
+        "summary": "A short photo story dedicated to textileart of my old friend. Vera, a felt and textile artist living in Blekinge, Sweden, crafts everyday items infused with a touch of fairytale magic in each piece, conveying a sense of being firmly rooted and connected to the deep beauty of Nordic nature.",
         "link": "https://www.verazfelt.se/",
+        "linkDescription": "VerazFelt",
         "description": ""
     }
 ]
