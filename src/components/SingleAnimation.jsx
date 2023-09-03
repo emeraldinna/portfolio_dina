@@ -68,7 +68,7 @@ const SingleAnimation = () => {
                 <Col xs={12} className='mt-4'>
                     <p style={{ textAlign: 'left' }}>{(project && project.summary)}</p>
                 </Col>
-                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>Official YouTube channel</p></a>}
+                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>{project.linkDescription || "Official YouTube channel"}</p></a>}
             </Row>
             <Row className='mb-4 justify-content-center'>
                 {project.videos.map((video, index) => (
