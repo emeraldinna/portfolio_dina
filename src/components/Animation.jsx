@@ -54,7 +54,7 @@ const Animation = () => {
                   />
                 </div>
                 {project.alt && (
-                  <h5 style={{ fontFamily: 'Oswald-Light', textAlign: 'center', marginTop: '5px' }}>{project.alt}</h5>
+                  <h5 style={{ fontFamily: 'Oswald-Regular', textAlign: 'center', marginTop: '5px' }}>{project.alt}</h5>
                 )}
               </Col>
             ))}

@@ -66,7 +66,7 @@ const PhotographyByGenre = () => {
                                 />
                             </div>
                             {project.kind === 'project' && (
-                                <h5 style={{ fontFamily: 'Oswald-Light', textAlign: 'center', marginTop: '5px' }}>{project.title}</h5>
+                                <h5 style={{ fontFamily: 'Oswald-Regular', textAlign: 'center', marginTop: '5px' }}>{project.title}</h5>
                             )}
                         </Col>
                     ))}
