@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 
 const About = () => {
   return (
-    <Container style={{ textAlign: 'left' }} className="mt-5 pt-5">
+    <Container style={{ textAlign: 'left' }} className="mt-5 pt-5 px-0 container-about">
       <Row className="justify-content-center">
         <Col className="mb-5" xs={12} sm={12} md={9} lg={6} xl={5} xxl={5}>
           <Image src="https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/DB-about.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />

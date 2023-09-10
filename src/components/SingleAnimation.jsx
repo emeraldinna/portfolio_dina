@@ -55,7 +55,7 @@ const SingleAnimation = () => {
     );
 
     return (
-        <Container className='mt-5'>
+        <Container className='mt-5 px-0'>
             <Row className='mb-4'>
                 <Col xs={12} md={10} className='mb-4 mb-md-0'>
                     <h1 className='fw-bold' style={{ fontFamily: 'Oswald-SemiBold', textAlign: 'left' }}>

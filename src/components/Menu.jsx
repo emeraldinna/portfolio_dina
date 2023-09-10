@@ -37,7 +37,7 @@ const Menu = () => {
                 expanded={expanded}
                 onToggle={handleMenuToggle}
             >
-                <Container>
+                <Container className="px-0">
                     <LinkContainer to="." style={{ fontFamily: 'Oswald-Bold', fontSize: '36px' }}>
                         <Navbar.Brand>
                             Dina Berkgaut
