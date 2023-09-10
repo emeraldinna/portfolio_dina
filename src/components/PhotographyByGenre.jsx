@@ -37,13 +37,13 @@ const PhotographyByGenre = () => {
     };
 
     return (
-        <Container className='mt-5'>
+        <Container className='mt-5 px-0'>
             {isLoading ? (
                 <Spinner animation='border' variant='secondary' role='status'>
                     <span className='visually-hidden'>Loading...</span>
                 </Spinner>
             ) : (
-                <Row className='mb-4 justify-content-center'>
+                <Row className='mb-4 mx-0 justify-content-center'>
                     {projects !== null && projects.map((project, index) => (
                         <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1 justify-content-center'>
                             <div
