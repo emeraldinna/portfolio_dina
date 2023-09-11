@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import { Controller, useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../config';
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -51,7 +52,7 @@ const Contact = () => {
       <p className="pb-5 fs-5 text fw-semibold" style={{ fontFamily: 'Oswald-Light' }}>If you have any questions do not hesitate to contact me!</p>
       <Row className="justify-content-center">
         <Col className="mb-5" xs={10} sm={10} md={8} lg={5} xl={4} xxl={4}>
-          <Image src="https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/postbox.jpg" rounded style={{ width: "80%", height: "auto", maxWidth: "100%" }} />
+          <Image src={`${BASE_URL}/images/postbox.jpg`} rounded style={{ width: "80%", height: "auto", maxWidth: "100%" }} />
         </Col>
         <Col xs={12} sm={12} md={12} lg={7} xl={6} xxl={6}>
           <Form name="contact" method="POST" noValidate onSubmit={handleSubmit(submitForm)}>

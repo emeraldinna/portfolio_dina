@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import data from '../data/photos.json';
 import PhotoOverlay from './PhotoOverlay';
 import Spinner from 'react-bootstrap/Spinner';
+import { BASE_URL } from '../config';
 
 const PhotographyByGenre = () => {
     const { genre } = useParams();
@@ -51,7 +52,7 @@ const PhotographyByGenre = () => {
                                 onClick={() => openImageOverlay(index)}
                             >
                                 <Image
-                                    src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${project.mainImage}`}
+                                    src={`${BASE_URL}/images/photography-page/${project.mainImage}`}
                                     fluid
                                     style={{
                                         width: '100%',
@@ -78,7 +79,7 @@ const PhotographyByGenre = () => {
                     activeIndex={selectedImageIndex}
                     setActiveIndex={setSelectedImageIndex}
                     onClose={closeImageOverlay}
-                    imageFolderPath='https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/'
+                    imageFolderPath={`${BASE_URL}/images/photography-page/`}
                 />
             )}
         </Container>

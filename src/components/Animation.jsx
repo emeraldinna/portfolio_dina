@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import data from '../data/animations.json';
 import Spinner from 'react-bootstrap/Spinner';
+import { BASE_URL } from '../config';
 
 const Animation = () => {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ const Animation = () => {
                   onClick={() => handleClick(project) }
                 >
                   <Image
-                    src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/animation-page/${project.source}`}
+                    src={`${BASE_URL}/images/animation-page/${project.source}`}
                     fluid
                     style={{
                       width: '100%',

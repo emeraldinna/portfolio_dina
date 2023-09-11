@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import data from '../data/mainProjects.json';
 import PhotoOverlay from './PhotoOverlay';
+import { BASE_URL } from '../config';
 
 const Home = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -35,7 +36,7 @@ const Home = () => {
               onClick={() => openImageOverlay(index)}
             >
               <Image
-                src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/${project.smallSource}`}
+                src={`${BASE_URL}/images/home-page/${project.smallSource}`}
                 fluid
                 style={{
                   width: '100%',
@@ -57,7 +58,7 @@ const Home = () => {
           activeIndex={selectedImageIndex}
           setActiveIndex={setSelectedImageIndex}
           onClose={closeImageOverlay}
-          imageFolderPath='https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/home-page/'
+          imageFolderPath={`${BASE_URL}/images/home-page/`}
         />
       )}
     </Container>
