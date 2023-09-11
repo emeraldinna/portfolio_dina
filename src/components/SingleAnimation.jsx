@@ -15,21 +15,25 @@ const SingleAnimation = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        if (location.state && location.state.project) {
-            setProject(location.state.project);
-            setIsLoading(false);
-
-        } else {
-            const projectId = location.pathname.split('/').pop();
-            const foundProject = data.find((proj) => proj.id.toString() === projectId);
-
-            if (foundProject) {
-                setProject(foundProject);
+        const fetchData = async () => {
+            if (location.state && location.state.project) {
+                setProject(location.state.project);
                 setIsLoading(false);
+    
             } else {
-                navigate('/animation');
+                const projectId = location.pathname.split('/').pop();
+                const foundProject = data.find((proj) => proj.id.toString() === projectId);
+    
+                if (foundProject) {
+                    setProject(foundProject);
+                    setIsLoading(false);
+                } else {
+                    navigate('/animation/not-found');
+                }
             }
-        }
+        };
+
+        fetchData();
     }, [location.state, location.pathname, navigate]);
 
     if (isLoading) {
@@ -46,7 +50,7 @@ const SingleAnimation = () => {
 
     const handleGoBack = () => {
         navigate(-1);
-    }
+    };
 
     const goBackButton = (
         <Button variant='link' style={{ color: 'black', textAlign: 'left' }} onClick={handleGoBack}>
