@@ -12,7 +12,7 @@ import { FaVimeoSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { Fragment } from 'react';
 
-const iconStyle = { color: "black", size: "24px" };
+const iconStyle = { color: "rgba(0, 0, 0, 0.55)", size: "24px" };
 
 const Menu = () => {
     const location = useLocation();
@@ -38,14 +38,14 @@ const Menu = () => {
                 onToggle={handleMenuToggle}
             >
                 <Container className="px-0">
-                    <LinkContainer to="." style={{ fontFamily: 'Oswald-Bold', fontSize: '36px' }}>
-                        <Navbar.Brand>
+                    <LinkContainer to="." style={{ fontFamily: 'FrederickatheGreat-Regular', fontSize: '44px', color: 'black' }}>
+                        <Navbar.Brand className="text-center">
                             Dina Berkgaut
                         </Navbar.Brand>
                     </LinkContainer>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                        <Nav>
+                        <Nav className="text-center">
                             <NavDropdown
                                 title="Photography"
                                 id="basic-nav-dropdown"
@@ -53,10 +53,10 @@ const Menu = () => {
                                 style={{ fontFamily: 'Oswald-Medium' }}
                             >
                                 <LinkContainer to="photography/people" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/people')}>
-                                    <NavDropdown.Item>People</NavDropdown.Item>
+                                    <NavDropdown.Item className="text-center">People</NavDropdown.Item>
                                 </LinkContainer>
                                 <LinkContainer to="photography/stories" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/stories')}>
-                                    <NavDropdown.Item>Stories</NavDropdown.Item>
+                                    <NavDropdown.Item className="text-center">Stories</NavDropdown.Item>
                                 </LinkContainer>
                             </NavDropdown>
                             <LinkContainer to="animation" onClick={handleMenuItemClick} active={location.pathname.startsWith('/animation')} style={{ fontFamily: 'Oswald-Medium' }}>
@@ -109,5 +109,5 @@ export default Menu;
 
 // Enable when it will be needed!
 // <LinkContainer to="photography/things" onClick={handleMenuItemClick} active={location.pathname.startsWith('/photography/things')}>
-//     <NavDropdown.Item>Things</NavDropdown.Item>
+//     <NavDropdown.Item className="text-center">Things</NavDropdown.Item>
 // </LinkContainer>

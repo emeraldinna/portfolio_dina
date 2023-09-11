@@ -29,7 +29,7 @@ const Home = () => {
     <Container className='mt-5 px-0'>
       <Row className='mb-4 mx-0 justify-content-center'>
         {projects && projects.map((project, index) => (
-          <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1'>
+          <Col key={index} xs={12} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1'>
             <div
               style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
               onClick={() => openImageOverlay(index)}
