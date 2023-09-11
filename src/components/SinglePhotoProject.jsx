@@ -9,6 +9,7 @@ import PhotoOverlay from './PhotoOverlay';
 import { Fragment } from 'react';
 import data from '../data/photos.json';
 import Spinner from 'react-bootstrap/Spinner';
+import { BASE_URL } from '../config';
 
 const SinglePhotoProject = () => {
     const location = useLocation();
@@ -102,7 +103,7 @@ const SinglePhotoProject = () => {
                                 onClick={() => openImageOverlay(index)}
                             >
                                 <Image
-                                    src={`https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/${item.smallSource}`}
+                                    src={`${BASE_URL}/images/photography-page/${item.smallSource}`}
                                     fluid
                                     style={{
                                         width: '100%',
@@ -132,7 +133,7 @@ const SinglePhotoProject = () => {
                         activeIndex={selectedImageIndex}
                         setActiveIndex={setSelectedImageIndex}
                         onClose={closeImageOverlay}
-                        imageFolderPath='https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/photography-page/'
+                        imageFolderPath={`${BASE_URL}/images/photography-page/`}
                     />
                 )}
             </Container>

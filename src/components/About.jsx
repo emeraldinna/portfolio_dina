@@ -2,13 +2,14 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Image from 'react-bootstrap/Image';
+import { BASE_URL } from '../config';
 
 const About = () => {
   return (
     <Container style={{ textAlign: 'left' }} className="mt-5 pt-5 px-0 container-about">
       <Row className="justify-content-center">
         <Col className="mb-5" xs={12} sm={12} md={9} lg={6} xl={5} xxl={5}>
-          <Image src="https://d2nc74wuj3tc6t.cloudfront.net/media/1/images/DB-about.jpg" rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
+          <Image src={`${BASE_URL}/images/DB-about.jpg`} rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
         </Col>
         <Col xs={12} sm={12} md={12} lg={6} xl={7} xxl={7}>
           <p>Hi! I'm Dina Berkgaut, a photographer and animator based in Stockholm.</p>
