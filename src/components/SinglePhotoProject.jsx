@@ -1,5 +1,5 @@
+import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,16 +7,50 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import PhotoOverlay from './PhotoOverlay';
 import { Fragment } from 'react';
+import data from '../data/photos.json';
+import Spinner from 'react-bootstrap/Spinner';
 
 const SinglePhotoProject = () => {
     const location = useLocation();
-    const { project } = location.state;
-    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
     const navigate = useNavigate();
+    const [project, setProject] = useState(null);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            if (location.state && location.state.project) {
+                setProject(location.state.project);
+                setIsLoading(false);
+            } else {
+                const projectId = location.pathname.split('/').pop();
+                const foundProject = data.find((proj) => proj.id.toString() === projectId);
+
+                if (foundProject && foundProject.kind === 'project') {
+                    setProject(foundProject);
+                    setIsLoading(false);
+                } else {
+                    navigate('/photography/not-found');
+                }
+            }
+        };
+
+        fetchData();
+    }, [location.state, location.pathname, navigate]);
+
+    if (isLoading) {
+        return (
+            <Container className='mt-5'>
+                <Spinner animation='border' variant='secondary' role='status'>
+                    <span className='visually-hidden'>Loading...</span>
+                </Spinner>
+            </Container>
+        );
+    }
 
     const handleGoBack = () => {
         navigate(-1);
-    }
+    };
 
     const openImageOverlay = (index) => {
         setSelectedImageIndex(index);
@@ -34,28 +68,34 @@ const SinglePhotoProject = () => {
 
     return (
         <Fragment>
-            <div className='hero-wrapper'>
-                <div className='hero-overlay' />
-                <Image className='hero-image' src={project.banner} fluid />
-            </div>
+            {project && (
+                <div className='hero-wrapper'>
+                    <div className='hero-overlay' />
+                    <Image className='hero-image' src={project.banner} fluid />
+                </div>
+            )}
             <Container className='mt-5 px-0'>
                 <Row className='mb-4'>
                     <Col xs={12} md={10} className='mb-4 mb-md-0'>
                         <h1 className='fw-bold' style={{ fontFamily: 'Oswald-SemiBold', textAlign: 'left' }}>
-                            {(project && project.title)}
+                            {project ? project.title : ''}
                         </h1>
                     </Col>
                     <Col xs={12} md={2} className='d-flex justify-content-md-end align-items-center' style={{ paddingLeft: '0px' }}>
                         {goBackButton}
                     </Col>
                     <Col xs={12} className='mt-4'>
-                        <p style={{ textAlign: 'left' }}>{(project && project.summary)}</p>
+                        <p style={{ textAlign: 'left' }}>{project ? project.summary : ''}</p>
                     </Col>
-                    {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>{project.linkDescription || "Official Website"}</p></a>}
+                    {project && project.link && (
+                        <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}>
+                            <p>{project.linkDescription || "Official Website"}</p>
+                        </a>
+                    )}
                 </Row>    
 
                 <Row className='mb-4 mx-0 justify-content-center'>
-                    {(project && project.related).map((item, index) => (
+                    {project && project.related.map((item, index) => (
                         <Col key={index} xs={11} sm={12} md={8} lg={6} xl={6} xxl={4} className='px-1 py-1 justify-content-center' >
                             <div
                                 style={{ height: '300px', overflow: 'hidden', position: 'relative' }}
@@ -88,7 +128,7 @@ const SinglePhotoProject = () => {
                 </Row>    
                 {selectedImageIndex !== null && (
                     <PhotoOverlay
-                        images={(project && project.related)}
+                        images={project ? project.related : []}
                         activeIndex={selectedImageIndex}
                         setActiveIndex={setSelectedImageIndex}
                         onClose={closeImageOverlay}

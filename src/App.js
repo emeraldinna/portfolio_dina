@@ -24,8 +24,10 @@ function App() {
             <Route index element={<Home />} />
             <Route path="photography/:genre" element={<PhotographyByGenre />} />
             <Route path="photography/:genre/:id" element={<SinglePhotoProject />} />
+            <Route path="photography/not-found" element={<NotFound />} />
             <Route path="animation" element={<Animation />} />
             <Route path="animation/:id" element={<SingleAnimation />} />
+            <Route path="animation/not-found" element={<NotFound />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
             <Route path="success" element={<Success />} />
