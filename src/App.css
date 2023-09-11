@@ -17,7 +17,7 @@ body {
 }
 
 .navbar-placeholder {
-  height: 80px; /* height equal to navbar height */
+  height: 92px; /* height equal to navbar height */
 }
 
 .nav {
@@ -53,6 +53,10 @@ div.dropdown-menu.show {
 
 .custom-navbar .dropdown-item:hover {
   background-color: #abadae;
+}
+
+.navbar-text > a > svg > path:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* section Drafts */
@@ -101,7 +105,7 @@ div.dropdown-menu.show {
   height: auto;
   object-fit: cover;
   object-position: center;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 .hero-overlay {
@@ -110,7 +114,7 @@ div.dropdown-menu.show {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 @media (max-width: 767px) {
@@ -141,5 +145,8 @@ div.dropdown-menu.show {
   .container-contact > * {
     margin-left: 12px !important;
     margin-right: 12px !important;    
+  }
+  .navbar-brand {
+    font-size: 36px !important;
   }
 }

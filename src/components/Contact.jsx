@@ -47,7 +47,7 @@ const Contact = () => {
 
   return (
     <Container className="mt-5 px-0 container-contact">
-      <h1 className="text-uppercase fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
+      <h1 className="fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
       <p className="pb-5 fs-5 text fw-semibold" style={{ fontFamily: 'Oswald-Light' }}>If you have any questions do not hesitate to contact me!</p>
       <Row className="justify-content-center">
         <Col className="mb-5" xs={10} sm={10} md={8} lg={5} xl={4} xxl={4}>

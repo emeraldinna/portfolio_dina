@@ -32,4 +32,10 @@
     font-family: 'Oswald-SemiBold';
     src: url('./fonts/Oswald/Oswald-SemiBold.ttf') format('truetype');
     font-weight: 600;
-}  
+}
+
+@font-face {
+    font-family: 'FrederickatheGreat-Regular';
+    src: url('./fonts/Fredericka/FrederickatheGreat-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
