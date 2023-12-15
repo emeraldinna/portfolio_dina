@@ -12,20 +12,32 @@ const About = () => {
           <Image src={`${BASE_URL}/images/DB-about.jpg`} rounded style={{ width: "100%", height: "auto", maxWidth: "100%" }} />
         </Col>
         <Col xs={12} sm={12} md={12} lg={6} xl={7} xxl={7}>
-          <p>Hi! I'm Dina Berkgaut, a photographer and animator based in Stockholm.</p>
-          <p>By nature, I'm an observant and friendly person. (I am a benevolent observer by nature.)
-            For me, photography is a way to capture a moment and preserve memories of the beauty of
-            everyday life.  I love using my skills to tell stories and convey genuine emotions through
-            my work. One of my favourite subjects to photograph is people, capturing their individuality
-            and uniqueness in my portraits. I love photographing people at work, talking, and walking,
-            and I am very fond of details. I enjoy cities and forests, desolate places and train stations,
-            old things and innovations, reflections and textures - anything that I can feel the breath
-            of history behind.</p>
-          <p>I grew up on the Baltic Sea, and my artistic vision is in some way shaped by the love
-            for the subdued northern beauty and the Mediterranean temperament inherited from my ancestors.</p>
-          <p>As an animator and visual composer, I have worked on TV series, advertisements, educational
-            animation, and computer games.</p>
-          <p>If you have any further questions, please don't hesitate to get in touch.</p>
+
+          <p>Hi there, and thanks for stopping by! I'm Dina Berkgaut, a
+          Stockholm-based photographer and animator!</p>
+
+          <p>As a photographer, I see myself as a kind observer. I always take
+          portraits, be it of a person, the street or the object in front of
+          me. For me, everything in the world is endowed with individuality,
+          and photography is a way to capture and preserve this as a memory. I
+          love finding beauty in the mundane, so I prefer candid photography
+          with a touch of magic, where I weave tales through portraits, family
+          captures, and enchanting photo chronicles.</p>
+
+          <p>As an animator, I am a great team player, excellent at thinking in
+          terms of the entire project rather than just one specific animation,
+          and very attentive to detail, both visually and in storytelling.
+          Animation is a lifelong learning journey, and I constantly discover
+          new things and enjoy sharing my knowledge with colleagues. My
+          favourite projects involve creating content with emotional depth,
+          especially for children's cartoons, educational programs, indie
+          games, and advertisements. However, I'm not at all suited for games
+          related to violence.</p>
+
+          <p>Feel free to reach out if you're interested in my photography or
+          animation services – I'm always excited to take on new projects and
+          bring your visions to life!</p>
+
         </Col>
       </Row>
     </Container>
