@@ -40,12 +40,12 @@
     },
     {
         "id": 3,
-        "alt": "The Barkers",
-        "title": "The Barkers (Barboskins): TV series for children",
+        "alt": "The Barkers TV Series",
+        "title": "The Barkers (Барбоскины)",
         "source": "barkers.jpg",
         "type": "tv",
-        "summary": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.",
-        "description": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.<br><p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple lighting, complex lighting together with lighting supervisor</li><li>Collaboration with Dynamic Effects and with Textures and Backgrounds departments</li><li>Final rendering (Pixar Renderman)</li><li>Compositing, 2D effects (After Effects, Premier, basic Nuke)</li><li>(Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop)</li></ul><br>As a visualizer I was responsible for finding all kinds of visual and animation problems, logical discrepancies etc. Fixing this required tight collaboration with episode director, artistic director, lead animator, technical director and film editor.",
+        "summary": "",
+        "description": "<p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple and complex lighting, working alongside with  lighting supervisor</li><li>Collaboration with Dynamic and Texture&nbsp;&amp;&nbsp;Background departments</li><li>Final rendering</li><li>Compositing, 2D effects</li></ul><p>Tools used: Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop, basic Nuke</p>",
         "link": "https://www.youtube.com/user/barboskinyonline",
         "videos": [
             { "url" : "https://youtu.be/t6KO2LH9HXs", "title" : "The Barkers" }
