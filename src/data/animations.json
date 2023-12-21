@@ -5,8 +5,8 @@
         "title": "Shelter 3 & Meadow",
         "source": "shelter-test.png",
         "type": "game",
-        "summary": "I worked at Might And Delight studio as a junior animator at Shelter 3 and Meadow projects and made keyframe animations for elephants and elephant babies, crocodiles, buffaloes for Shelter 3 and more animations for elephant babies for Meadows . All animation made in Motion Builder.",
-        "description": "",
+        "summary": "While studying at Future Games I made my internship at Might And Delight studio as a junior animator, working on  Shelter 3 game. This internship later became a work contract, during which I contributed to both Shelter 3 and a new game Meadow. I created keyframe animations for elephants and elephant babies, including a full set of emotional reactions, and animations for crocodiles and buffaloes for Shelter 3. Then, I worked on introducing elephant babies in the game Meadow. All animations were made in Motion Builder.",
+        "description": "<p>My responsibilities included: <ul><li>Keyframe animations in Motion Builder for the main characters and NPCs</li><li>Rig testing</li><li>General problem-solving during implementation in Unity</li><li>Assisting the Art Director in creating animatics</li><li>Making additional animations for the trailer<p>",
         "link": "https://store.steampowered.com/app/977630/Shelter_3/",
         "linkDescription": "Shelter 3 on Steam",
         "videos" : [
@@ -15,7 +15,7 @@
             { "url" : "https://youtu.be/hqOvGgD3VtU", "title" : "Elephant Calf in animal MMO ”Meadow"}
         ],
         "drafts-section": {
-            "general-text": "",
+            "general-text": "Throughout my involvement in these projects, I not only became more familiar with the animation pipeline for games and how is it different from working on a series, but also improved my skills in research and working with animation references. Additionally, I learned a lot about the intricacies of animal motion.",
             "drafts": [
                 { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "The hungry baby calf animation for Shelter 3"},
                 { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "#2"},
@@ -44,7 +44,7 @@
         "title": "The Barkers (Барбоскины)",
         "source": "barkers.jpg",
         "type": "tv",
-        "summary": "",
+        "summary": "From 2010 to 2012, I was a part of the rendering team at Melnitsa Animation Studio in St. Petersburg, working on 'The Barkers,' a popular animated TV series for children. I worked as a layout artist, and later as a render artist.",
         "description": "<p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple and complex lighting, working alongside with  lighting supervisor</li><li>Collaboration with Dynamic and Texture&nbsp;&amp;&nbsp;Background departments</li><li>Final rendering</li><li>Compositing, 2D effects</li></ul><p>Tools used: Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop, basic Nuke</p>",
         "link": "https://www.youtube.com/user/barboskinyonline",
         "videos": [
