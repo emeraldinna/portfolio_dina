@@ -91,6 +91,7 @@ const SingleAnimation = () => {
                                 playsinline
                                 allowFullScreen
                             />
+                            <h5 style={{ fontFamily: 'Oswald-Light' }}>{video.title}</h5>
                         </div>
                     </Col>
                 ))}
@@ -99,30 +100,52 @@ const SingleAnimation = () => {
                 <div dangerouslySetInnerHTML={markup} className='mb-4' />
                 {project['drafts-section'] && typeof project['drafts-section'] === 'object' && Object.keys(project['drafts-section']).length > 0 && (
                     <div className='mt-4'>
-                        <h3 style={{ textAlign: 'center', textDecoration: 'underline', fontFamily: 'Oswald-SemiBold' }}>Drafts</h3>
+                        <h3 style={{ textAlign: 'center', textDecoration: 'underline', fontFamily: 'Oswald-SemiBold' }}>{project['drafts-section'].title || 'Drafts'}</h3>
+                        <p>{project['drafts-section']['general-text']}</p>
                         {project['drafts-section'] && (
                             <div className='mt-4'>
                                 {project['drafts-section']['drafts'] && (
                                     <div className='grid-container py-4'>
-                                        {project['drafts-section']['drafts'].map((draft, index) => (
-                                            <div key={index}>
-                                                <ReactPlayer
-                                                    url={draft.url}
-                                                    width='100%'
-                                                    height='300px'
-                                                    controls
-                                                    loop
-                                                    muted
-                                                    volume={0.5}
-                                                    playsinline
-                                                    allowFullScreen
-                                                />
-                                                <h5 style={{ fontFamily: 'Oswald-Light' }}>{draft.title}</h5>
-                                            </div>
-                                        ))}
+                                        {project['drafts-section']['drafts'].map((draft, index) => {
+                                            if (draft.type === 'sketchfab') {
+                                                return (
+                                                <div key={index}>
+                                                    <div class="sketchfab-embed-wrapper">
+                                                        <iframe title={draft.title}
+                                                        width='100%'
+                                                        height='300px'
+                                                        frameborder="0"
+                                                        allowfullscreen
+                                                        mozallowfullscreen="true"
+                                                        webkitallowfullscreen="true"
+                                                        allow="autoplay; fullscreen; xr-spatial-tracking"
+                                                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+                                                        web-share src={draft.url}>
+                                                        </iframe>
+                                                    </div>
+                                                    <h5 style={{ fontFamily: 'Oswald-Light' }}>{draft.title}</h5>
+                                                </div>)
+                                            }
+                                            else {
+                                                return (
+                                                <div key={index}>
+                                                    <ReactPlayer
+                                                        url={draft.url}
+                                                        width='100%'
+                                                        height='300px'
+                                                        controls
+                                                        loop
+                                                        muted
+                                                        volume={0.5}
+                                                        playsinline
+                                                        allowFullScreen
+                                                    />
+                                                    <h5 style={{ fontFamily: 'Oswald-Light' }}>{draft.title}</h5>
+                                                </div>)
+                                            }
+                                        })}
                                     </div>
                                 )}
-                                <p>{project['drafts-section']['general-text']}</p>
                             </div>
                         )}
                     </div>

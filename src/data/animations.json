@@ -1,33 +1,39 @@
 [
     {
         "id": 1,
-        "alt": "Shelter 3 Teaser",
+        "alt": "Shelter 3 & Meadow Games",
         "title": "Shelter 3 & Meadow",
         "source": "shelter-test.png",
         "type": "game",
-        "summary": "I worked at Might And Delight studio as a junior animator at Shelter 3 and Meadow projects and made keyframe animations for elephants and elephant babies, crocodiles, buffaloes for Shelter 3 and more animations for elephant babies for Meadows . All animation made in Motion Builder.",
-        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+        "summary": "While studying at Future Games I made my internship at Might And Delight studio as a junior animator, working on  Shelter 3 game. This internship later became a work contract, during which I contributed to both Shelter 3 and a new game Meadow. I created keyframe animations for elephants and elephant babies, including a full set of emotional reactions, and animations for crocodiles and buffaloes for Shelter 3. Then, I worked on introducing elephant babies in the game Meadow. All animations were made in Motion Builder.",
+        "description": "<p>My responsibilities included: <ul><li>Keyframe animations in Motion Builder for the main characters and NPCs</li><li>Rig testing</li><li>General problem-solving during implementation in Unity</li><li>Assisting the Art Director in creating animatics</li><li>Making additional animations for the trailer<p>",
+        "link": "https://store.steampowered.com/app/977630/Shelter_3/",
+        "linkDescription": "Shelter 3 on Steam",
         "videos" : [
             { "url" : "https://youtu.be/UmqrVpFa2OU", "title" : "Shelter 3 Teaser"},
             { "url" : "https://youtu.be/U_IlNFERdzE", "title" : "Shelter 3 Launch Trailer"},
             { "url" : "https://youtu.be/hqOvGgD3VtU", "title" : "Elephant Calf in animal MMO ”Meadow"}
         ],
         "drafts-section": {
-            "general-text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "title": "Draft Animations",
+            "general-text": "Throughout my involvement in these projects, I not only became more familiar with the animation pipeline for games and how is it different from working on a series, but also improved my skills in research and working with animation references. Additionally, I learned a lot about the intricacies of animal motion.",
             "drafts": [
-                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "The hungry baby calf animation for Shelter 3"},
-                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "#2"},
-                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "#3"}  
+                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "Hungry Baby Elephant (with audio)"},
+                { "url" : "https://youtu.be/XcluPAXXXAE", "title" : "Elephant Trumping (with audio)"},
+                { "url" : "https://youtu.be/PgL_1nV4fNA?t=10", "title" : "Crocodile Animation"},
+                { "type": "sketchfab", "url" : "https://sketchfab.com/models/1d407489ae284f59a017d79887410edf/embed?autospin=1&autostart=1&scrollwheel=0", "title": "Elephant Calf Animation (Meadow)" },
+                { "type": "sketchfab", "url" : "https://sketchfab.com/models/082c1e73e8084d0385f2a253302099bf/embed?autospin=1&autostart=1&scrollwheel=0", "title": "Buffalo animation" },
+                { "type": "sketchfab", "url" : "https://sketchfab.com/models/6d4fcb109b0b43ba989f793ec140ddee/embed?autospin=1&autostart=1&scrollwheel=0", "title": "Fish Animation (not included in game)" }
             ]
         }
     },
     {
         "id": 2,
-        "alt": "Moonzy (Luntik and his friends)",
-        "title": "Moonzy (Luntik and his friends): TV series for pre-school children.",
+        "alt": "Moonzy TV Series",
+        "title": "Moonzy (Лунтик и его друзья)",
         "source": "moonzy.jpg",
         "type": "tv",
-        "summary": "I started my work at Studio Melnitsa, St.Petersburg on the project Moonzy since it's beginning in 2005 and worked on it until 2008. First seasons were made in 2D cutout technique (After Effects). Character design and backgrounds were made in Photoshop.",
+        "summary": "I began my work at Studio Melnitsa in St. Petersburg on the Moonzy project, a TV series for pre-school children, from pre-production in 2005 and until 2008. This was my first experience working in a large studio and getting acquainted with the animation production pipeline. The first seasons were produced using 2D cutout techniques in After Effects, with character design and backgrounds created in Photoshop. My responsibilities included 2D cut-out animation, character design, and pre-production tasks.",
         "description": "",
         "link": "https://www.youtube.com/user/luntik",
         "videos": [
@@ -38,12 +44,12 @@
     },
     {
         "id": 3,
-        "alt": "The Barkers",
-        "title": "The Barkers (Barboskins): TV series for children",
+        "alt": "The Barkers TV Series",
+        "title": "The Barkers (Барбоскины)",
         "source": "barkers.jpg",
         "type": "tv",
-        "summary": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.",
-        "description": "In 2010 I joined the team working on The Barkers, a popular animated TV series made by Studio Melnitsa in St. Petersburg.<br><p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple lighting, complex lighting together with lighting supervisor</li><li>Collaboration with Dynamic Effects and with Textures and Backgrounds departments</li><li>Final rendering (Pixar Renderman)</li><li>Compositing, 2D effects (After Effects, Premier, basic Nuke)</li><li>(Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop)</li></ul><br>As a visualizer I was responsible for finding all kinds of visual and animation problems, logical discrepancies etc. Fixing this required tight collaboration with episode director, artistic director, lead animator, technical director and film editor.",
+        "summary": "From 2010 to 2012, I was a part of the rendering team at Melnitsa Animation Studio in St. Petersburg, working on 'The Barkers,' a popular animated TV series for children. I worked as a layout artist, and later as a render artist.",
+        "description": "<p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple and complex lighting, working alongside with  lighting supervisor</li><li>Collaboration with Dynamic and Texture&nbsp;&amp;&nbsp;Background departments</li><li>Final rendering</li><li>Compositing, 2D effects</li></ul><p>Tools used: Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop, basic Nuke</p>",
         "link": "https://www.youtube.com/user/barboskinyonline",
         "videos": [
             { "url" : "https://youtu.be/t6KO2LH9HXs", "title" : "The Barkers" }
@@ -52,26 +58,26 @@
     },
     {
         "id": 4,
-        "alt": "Huba-bubba commercials",
-        "title": "Huba-bubba commercials",
+        "alt": "Hubba-Bubba Commercials",
+        "title": "Hubba-Bubba Commercials",
         "source": "huba-bubba.jpg",
         "type": "tv",
-        "summary": "After studying at St. Petersburg State University of Film and Television I started working as a Character Assistant on 'Hubba-bubba' commercials by Visotsky&Sikorsky Animation Studio in 2004 - 2005 (internship, later employment).",
-        "description": "<p>After studying at St. Petersburg State University of Film and Television I started working as a Character Assistant on 'Hubba-bubba' commercials by Visotsky&Sikorsky Animation Studio in 2004 - 2005 (internship, later employment).</p><p>It was good old clay animation! My duty was to again and again sculpt plasticine characters for stop-motion animation.</p>",
+        "summary": "After studying at St. Petersburg State University of Film and Television, I embarked on my first professional animation experience as a Character Assistant on 'Hubba-bubba' commercials at Visotsky & Sikorsky Animation Studio in 2004 - 2005. This opportunity, which began as an internship and later turned into employment, introduced me to the world of good old clay animation.",
+        "description": "<p>I began my journey by manually mixing plasticine to match the exact colour required by the style guide. This meticulous work helped me overcome initial fears and build confidence. My primary duty was to sculpt and repeatedly repair plasticine characters for stop-motion animation. I learned to mould and fix the clay characters very precisely, adhering closely to the given models.</p>",
         "link": "",
         "videos": [
-            { "url" : "https://youtu.be/zodonIou6rs", "title" : "Huba-bubba commercials" },
-            { "url" : "https://youtu.be/4UOrhHxBaNE", "title" : "Huba-bubba" }
+            { "url" : "https://youtu.be/zodonIou6rs", "title" : "Hubba-Bubba commercials" },
+            { "url" : "https://youtu.be/4UOrhHxBaNE", "title" : "Hubba-Bubba" }
         ],
         "drafts-section": {}
     },
     {
         "id": 5,
-        "alt": "Animation with kids",
-        "title": "Animation with kids",
+        "alt": "Stop Motion",
+        "title": "Stop Motion",
         "source": "flower-test.png",
         "type": "stop-motion",
-        "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed gravida neque. Quisque et nisl suscipit, sodales turpis ut, bibendum neque. Fusce faucibus ante tortor, consequat tincidunt lectus molestie ac. Ut mattis, ante blandit egestas facilisis, mauris massa aliquet nisl, sed congue nibh enim eget elit. ",
+        "summary": "Recently I have become very interested in stop-motion, a technique that lies between animation and photography. Although my experience in this animation technique is still somewhat limited, I am actively experimenting with it. Stop-motion, in my view, can be exceptionally diverse - sometimes very simple, yet other times utterly magical. I also really enjoy animating with my hands, even though it demands incredible persistence and a degree of humility. Sometimes, however, new and unexpected solutions can be born from the resistance of the material",
         "description": "",
         "link": "",
         "videos": [
@@ -79,6 +85,22 @@
             { "url" : "https://youtu.be/PvkinDaR2Pg", "title" : "draft - leaves" },
             { "url" : "https://youtu.be/hVwyHjAmmzM", "title" : "draft - test turtle" },
             { "url" : "https://youtu.be/tteKMrJm3FQ", "title" : "draft - animation loop"}
+        ],
+        "drafts-section": {}
+    },
+    {
+        "id": 6,
+        "alt": "Studying Animations",
+        "title": "Studying Animations",
+        "source": "studying animation.jpg",
+        "type": "stop-motion",
+        "summary": "",
+        "description": "",
+        "link": "",
+        "videos": [
+            { "url" : "https://vimeo.com/showcase/8490850/video/553071805", "title" : "Walk" },
+            { "url" : "https://vimeo.com/showcase/8490850/video/553224912", "title" : "Run" },
+            { "url" : "https://vimeo.com/showcase/8490850/video/562200121", "title" : "Attack" }
         ],
         "drafts-section": {}
     }
