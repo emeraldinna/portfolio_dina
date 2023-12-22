@@ -87,5 +87,21 @@
             { "url" : "https://youtu.be/tteKMrJm3FQ", "title" : "draft - animation loop"}
         ],
         "drafts-section": {}
+    },
+    {
+        "id": 6,
+        "alt": "Studying Animations",
+        "title": "Studying Animations",
+        "source": "studying animation.jpg",
+        "type": "stop-motion",
+        "summary": "",
+        "description": "",
+        "link": "",
+        "videos": [
+            { "url" : "https://vimeo.com/showcase/8490850/video/553071805", "title" : "Walk" },
+            { "url" : "https://vimeo.com/showcase/8490850/video/553224912", "title" : "Run" },
+            { "url" : "https://vimeo.com/showcase/8490850/video/562200121", "title" : "Attack" }
+        ],
+        "drafts-section": {}
     }
 ]
