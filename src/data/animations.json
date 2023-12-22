@@ -15,11 +15,15 @@
             { "url" : "https://youtu.be/hqOvGgD3VtU", "title" : "Elephant Calf in animal MMO ”Meadow"}
         ],
         "drafts-section": {
+            "title": "Draft Animations",
             "general-text": "Throughout my involvement in these projects, I not only became more familiar with the animation pipeline for games and how is it different from working on a series, but also improved my skills in research and working with animation references. Additionally, I learned a lot about the intricacies of animal motion.",
             "drafts": [
-                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "The hungry baby calf animation for Shelter 3"},
-                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "#2"},
-                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "#3"}  
+                { "url" : "https://youtu.be/EssZLgJWBeY", "title" : "Hungry Baby Elephant (with audio)"},
+                { "url" : "https://youtu.be/XcluPAXXXAE", "title" : "Elephant Trumping (with audio)"},
+                { "url" : "https://youtu.be/PgL_1nV4fNA?t=10", "title" : "Crocodile Animation"},
+                { "type": "sketchfab", "url" : "https://sketchfab.com/models/1d407489ae284f59a017d79887410edf/embed?autospin=1&autostart=1&scrollwheel=0", "title": "Elephant Calf Animation (Meadow)" },
+                { "type": "sketchfab", "url" : "https://sketchfab.com/models/082c1e73e8084d0385f2a253302099bf/embed?autospin=1&autostart=1&scrollwheel=0", "title": "Buffalo animation" },
+                { "type": "sketchfab", "url" : "https://sketchfab.com/models/6d4fcb109b0b43ba989f793ec140ddee/embed?autospin=1&autostart=1&scrollwheel=0", "title": "Fish Animation (not included in game)" }
             ]
         }
     },
