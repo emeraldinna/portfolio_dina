@@ -91,6 +91,7 @@ const SingleAnimation = () => {
                                 playsinline
                                 allowFullScreen
                             />
+                            <h5 style={{ fontFamily: 'Oswald-Light' }}>{video.title}</h5>
                         </div>
                     </Col>
                 ))}
