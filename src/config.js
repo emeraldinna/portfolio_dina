@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://d2nc74wuj3tc6t.cloudfront.net/media/1';
+export const BASE_URL = 'https://d2nc74wuj3tc6t.cloudfront.net/media/2';
