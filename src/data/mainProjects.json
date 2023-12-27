@@ -1,50 +1,220 @@
 [
     {
-        "id": 1,
-        "alt": "theatrical image",
-        "title": "theatrical image",
-        "smallSource": "01.jpg",
-        "largeSource": "01a.jpg",
+        "id": 25,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_5388 big.jpg",
+        "largeSource": "IMG_5388 big.jpg",
         "type": "photo"
     },
     {
-        "id": 2,
-        "alt": "pigeons",
-        "title": "pigeons",
-        "smallSource": "02.jpg",
-        "largeSource": "02a.jpg",
-        "type": "photo"        
-    },
-    {
-        "id": 3,
-        "alt": "dove sits on a lantern",
-        "title": "dove sits on a lantern",
-        "smallSource": "03.jpg",
-        "largeSource": "03.jpg",
-        "type": "photo"        
-    },
-    {
-        "id": 4,
-        "alt": "girl in the water",
-        "title": "girl in the water",
-        "smallSource": "04.jpg",
-        "largeSource": "04a.jpg",
-        "type": "photo"        
-    },
-    {
-        "id": 5,
-        "alt": "girl dressed as a cow on a bike",
-        "title": "girl dressed as a cow on a bike",
-        "smallSource": "05.jpg",
-        "largeSource": "05a.jpg",
-        "type": "photo"        
-    },
-    {   
-        "id": 8,
-        "alt": "Vera Z. Gutman's textile art",
-        "title": "Vera Z. Gutman's textile art",
-        "smallSource": "IMG_8370-small.jpg", 
-        "largeSource": "IMG_8370 big.jpg",
+        "id": 10,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_0499 big.jpg",
+        "largeSource": "IMG_0499 big.jpg",
         "type": "photo"
-    }        
+    },
+    {
+        "id": 9,
+        "alt": "",
+        "title": "",
+        "smallSource": "DSC00139 big.jpg",
+        "largeSource": "DSC00139 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 15,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_2094 big.jpg",
+        "largeSource": "IMG_2094 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 33,
+        "alt": "",
+        "title": "",
+        "smallSource": "SA700202 big.jpg",
+        "largeSource": "SA700202 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 21,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_3736 big.jpg",
+        "largeSource": "IMG_3736 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 11,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_0655 big.jpg",
+        "largeSource": "IMG_0655 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 18,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_2430 big.jpg",
+        "largeSource": "IMG_2430 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 6,
+        "alt": "",
+        "title": "",
+        "smallSource": "2022-03-25 17.07.38 big.jpg",
+        "largeSource": "2022-03-25 17.07.38 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 7,
+        "alt": "",
+        "title": "",
+        "smallSource": "DSC00116 big.jpg",
+        "largeSource": "DSC00116 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 22,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_4931 big.jpg",
+        "largeSource": "IMG_4931 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 14,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_1204 big.jpg",
+        "largeSource": "IMG_1204 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 19,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_2455 big.jpg",
+        "largeSource": "IMG_2455 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 24,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_5361 big.jpg",
+        "largeSource": "IMG_5361 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 13,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_1109 big.jpg",
+        "largeSource": "IMG_1109 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 30,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_8610 big.jpg",
+        "largeSource": "IMG_8610 big.jpg",
+        "type": "photo"
+    },
+
+    {
+        "id": 26,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_5521 big.jpg",
+        "largeSource": "IMG_5521 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 29,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_8222 big.jpg",
+        "largeSource": "IMG_8222 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 16,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_2164 big.jpg",
+        "largeSource": "IMG_2164 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 12,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_1007 big.jpg",
+        "largeSource": "IMG_1007 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 27,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_7147 big.jpg",
+        "largeSource": "IMG_7147 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 17,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_2276 big.jpg",
+        "largeSource": "IMG_2276 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 31,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_8777 big.jpg",
+        "largeSource": "IMG_8777 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 20,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_3044 big.jpg",
+        "largeSource": "IMG_3044 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 32,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_9058 big.jpg",
+        "largeSource": "IMG_9058 big.jpg",
+        "type": "photo"
+    },
+    {
+        "id": 23,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_5202 big.jpg",
+        "largeSource": "IMG_5202 big.jpg",
+        "type": "photo"
+    },
+
+    {
+        "id": 28,
+        "alt": "",
+        "title": "",
+        "smallSource": "IMG_7756 big.jpg",
+        "largeSource": "IMG_7756 big.jpg",
+        "type": "photo"
+    }
 ]
