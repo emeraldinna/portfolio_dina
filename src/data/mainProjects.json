@@ -1,7 +1,7 @@
 [
     {
         "id": 25,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_5388 big.jpg",
         "largeSource": "IMG_5388 big.jpg",
@@ -9,7 +9,7 @@
     },
     {
         "id": 10,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_0499 big.jpg",
         "largeSource": "IMG_0499 big.jpg",
@@ -17,7 +17,7 @@
     },
     {
         "id": 9,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "DSC00139 big.jpg",
         "largeSource": "DSC00139 big.jpg",
@@ -25,7 +25,7 @@
     },
     {
         "id": 15,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_2094 big.jpg",
         "largeSource": "IMG_2094 big.jpg",
@@ -33,7 +33,7 @@
     },
     {
         "id": 33,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "SA700202 big.jpg",
         "largeSource": "SA700202 big.jpg",
@@ -41,7 +41,7 @@
     },
     {
         "id": 21,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_3736 big.jpg",
         "largeSource": "IMG_3736 big.jpg",
@@ -49,7 +49,7 @@
     },
     {
         "id": 11,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_0655 big.jpg",
         "largeSource": "IMG_0655 big.jpg",
@@ -57,7 +57,7 @@
     },
     {
         "id": 18,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_2430 big.jpg",
         "largeSource": "IMG_2430 big.jpg",
@@ -65,7 +65,7 @@
     },
     {
         "id": 6,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "2022-03-25 17.07.38 big.jpg",
         "largeSource": "2022-03-25 17.07.38 big.jpg",
@@ -73,7 +73,7 @@
     },
     {
         "id": 7,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "DSC00116 big.jpg",
         "largeSource": "DSC00116 big.jpg",
@@ -81,7 +81,7 @@
     },
     {
         "id": 22,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_4931 big.jpg",
         "largeSource": "IMG_4931 big.jpg",
@@ -89,7 +89,7 @@
     },
     {
         "id": 14,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_1204 big.jpg",
         "largeSource": "IMG_1204 big.jpg",
@@ -97,7 +97,7 @@
     },
     {
         "id": 19,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_2455 big.jpg",
         "largeSource": "IMG_2455 big.jpg",
@@ -105,7 +105,7 @@
     },
     {
         "id": 24,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_5361 big.jpg",
         "largeSource": "IMG_5361 big.jpg",
@@ -113,7 +113,7 @@
     },
     {
         "id": 13,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_1109 big.jpg",
         "largeSource": "IMG_1109 big.jpg",
@@ -121,7 +121,7 @@
     },
     {
         "id": 30,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_8610 big.jpg",
         "largeSource": "IMG_8610 big.jpg",
@@ -130,7 +130,7 @@
 
     {
         "id": 26,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_5521 big.jpg",
         "largeSource": "IMG_5521 big.jpg",
@@ -138,7 +138,7 @@
     },
     {
         "id": 29,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_8222 big.jpg",
         "largeSource": "IMG_8222 big.jpg",
@@ -146,7 +146,7 @@
     },
     {
         "id": 16,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_2164 big.jpg",
         "largeSource": "IMG_2164 big.jpg",
@@ -154,7 +154,7 @@
     },
     {
         "id": 12,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_1007 big.jpg",
         "largeSource": "IMG_1007 big.jpg",
@@ -162,7 +162,7 @@
     },
     {
         "id": 27,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_7147 big.jpg",
         "largeSource": "IMG_7147 big.jpg",
@@ -170,7 +170,7 @@
     },
     {
         "id": 17,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_2276 big.jpg",
         "largeSource": "IMG_2276 big.jpg",
@@ -178,7 +178,7 @@
     },
     {
         "id": 31,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_8777 big.jpg",
         "largeSource": "IMG_8777 big.jpg",
@@ -186,7 +186,7 @@
     },
     {
         "id": 20,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_3044 big.jpg",
         "largeSource": "IMG_3044 big.jpg",
@@ -194,7 +194,7 @@
     },
     {
         "id": 32,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_9058 big.jpg",
         "largeSource": "IMG_9058 big.jpg",
@@ -202,7 +202,7 @@
     },
     {
         "id": 23,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_5202 big.jpg",
         "largeSource": "IMG_5202 big.jpg",
@@ -211,7 +211,7 @@
 
     {
         "id": 28,
-        "alt": "",
+        "alt": "photo",
         "title": "",
         "smallSource": "IMG_7756 big.jpg",
         "largeSource": "IMG_7756 big.jpg",
