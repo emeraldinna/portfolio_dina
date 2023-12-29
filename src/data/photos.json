@@ -3,10 +3,10 @@
         "id": 1,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_1060 big.jpg",
-        "largeSource": "IMG_1060 big.jpg",
+        "mainImage": "People/IMG_2629 big.jpg",
+        "largeSource": "People/IMG_2629 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -14,10 +14,10 @@
         "id": 2,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_1105 big.jpg",
-        "largeSource": "IMG_1105 big.jpg",
+        "mainImage": "People/SA701198 big.jpg",
+        "largeSource": "People/SA701198 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -25,10 +25,10 @@
         "id": 3,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_1109 big.jpg",
-        "largeSource": "IMG_1109 big.jpg",
+        "mainImage": "People/IMG_4329 big.jpg",
+        "largeSource": "People/IMG_4329 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -36,10 +36,10 @@
         "id": 4,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_1204 big.jpg",
-        "largeSource": "IMG_1204 big.jpg",
+        "mainImage": "People/IMG_9773 big.jpg",
+        "largeSource": "People/IMG_9773 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -47,10 +47,10 @@
         "id": 5,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_2430 big.jpg",
-        "largeSource": "IMG_2430 big.jpg",
+        "mainImage": "People/IMG_7140.jpg",
+        "largeSource": "People/IMG_7140.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -58,10 +58,10 @@
         "id": 6,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_4329 big.jpg",
-        "largeSource": "IMG_4329 big.jpg",
+        "mainImage": "People/IMG_0328 big.jpg",
+        "largeSource": "People/IMG_0328 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -69,10 +69,10 @@
         "id": 7,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_4540 big.jpg",
-        "largeSource": "IMG_4540 big.jpg",
+        "mainImage": "People/IMG_0325  big.jpg",
+        "largeSource": "People/IMG_0325  big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -80,10 +80,10 @@
         "id": 8,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_5521 big.jpg",
-        "largeSource": "IMG_5521 big.jpg",
+        "mainImage": "People/2022-03-25 17.07.38 big.jpg",
+        "largeSource": "People/2022-03-25 17.07.38 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -91,10 +91,10 @@
         "id": 9,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_7147 big.jpg",
-        "largeSource": "IMG_7147 big.jpg",
+        "mainImage": "People/IMG_3076 big.jpg",
+        "largeSource": "People/IMG_3076 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -102,10 +102,10 @@
         "id": 10,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_7216 big.jpg",
-        "largeSource": "IMG_7216 big.jpg",
+        "mainImage": "People/IMG_3238 big.jpg",
+        "largeSource": "People/IMG_3238 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -113,10 +113,10 @@
         "id": 11,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_7289 big.jpg",
-        "largeSource": "IMG_7289 big.jpg",
+        "mainImage": "People/IMG_5343 big.jpg",
+        "largeSource": "People/IMG_5343 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
@@ -124,50 +124,1176 @@
         "id": 12,
         "alt": "portrait",
         "title": "",
-        "mainImage": "IMG_9090 big.jpg",
-        "largeSource": "IMG_9090 big.jpg",
+        "mainImage": "People/DSC00149 big.jpg",
+        "largeSource": "People/DSC00149 big.jpg",
         "description": "",
-        "type" : "photo",
+        "type": "photo",
         "kind": "individual",
         "genre": "people"
     },
     {
         "id": 13,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2079 big.jpg",
+        "largeSource": "People/IMG_2079 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 14,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2094 big.jpg",
+        "largeSource": "People/IMG_2094 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 15,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2430 big.jpg",
+        "largeSource": "People/IMG_2430 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 16,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1988 big.jpg",
+        "largeSource": "People/IMG_1988 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 17,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_9058 big.jpg",
+        "largeSource": "People/IMG_9058 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 18,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8516 big.jpg",
+        "largeSource": "People/IMG_8516 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 19,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0466  big.jpg",
+        "largeSource": "People/IMG_0466  big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 20,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5724 big.jpg",
+        "largeSource": "People/IMG_5724 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 22,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_155349 big.jpg",
+        "largeSource": "People/IMG_155349 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 23,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/2022-03-25 17.02.48 big.jpg",
+        "largeSource": "People/2022-03-25 17.02.48 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 24,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5032 big.jpg",
+        "largeSource": "People/IMG_5032 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 25,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/(74-of-114) big.jpg",
+        "largeSource": "People/(74-of-114) big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 26,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_4616 big.jpg",
+        "largeSource": "People/IMG_4616 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 27,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8006 big.jpg",
+        "largeSource": "People/IMG_8006 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 28,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7189.jpg",
+        "largeSource": "People/IMG_7189.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 29,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7186 big.jpg",
+        "largeSource": "People/IMG_7186 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 30,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1105 big.jpg",
+        "largeSource": "People/IMG_1105 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 31,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA700297 big.jpg",
+        "largeSource": "People/SA700297 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 32,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1109 big.jpg",
+        "largeSource": "People/IMG_1109 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 33,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2487 big.jpg",
+        "largeSource": "People/IMG_2487 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 35,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA702769 big.jpg",
+        "largeSource": "People/SA702769 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 36,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_6598 big.jpg",
+        "largeSource": "People/IMG_6598 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 37,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_4540 big.jpg",
+        "largeSource": "People/IMG_4540 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 38,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0332 big.jpg",
+        "largeSource": "People/IMG_0332 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 39,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8572 big.jpg",
+        "largeSource": "People/IMG_8572 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 40,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8777 big.jpg",
+        "largeSource": "People/IMG_8777 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 42,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2287 big.jpg",
+        "largeSource": "People/IMG_2287 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 43,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_6618 big.jpg",
+        "largeSource": "People/IMG_6618 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 44,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/rina- (3) big.jpg",
+        "largeSource": "People/rina- (3) big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 45,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_3737 big.jpg",
+        "largeSource": "People/IMG_3737 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 46,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_4633 big.jpg",
+        "largeSource": "People/IMG_4633 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 47,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2164 big.jpg",
+        "largeSource": "People/IMG_2164 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 48,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_3744 big.jpg",
+        "largeSource": "People/IMG_3744 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 49,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA702716 big.jpg",
+        "largeSource": "People/SA702716 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 50,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1060 big.jpg",
+        "largeSource": "People/IMG_1060 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 51,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/(4 of 31) big.jpg",
+        "largeSource": "People/(4 of 31) big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 52,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_9808 big.jpg",
+        "largeSource": "People/IMG_9808 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 53,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5402 big.jpg",
+        "largeSource": "People/IMG_5402 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 54,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7334 big.jpg",
+        "largeSource": "People/IMG_7334 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 55,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1032.jpg",
+        "largeSource": "People/IMG_1032.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 56,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0655 big.jpg",
+        "largeSource": "People/IMG_0655 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 57,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5292 big.jpg",
+        "largeSource": "People/IMG_5292 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 58,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/DSC00155 big.jpg",
+        "largeSource": "People/DSC00155 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 59,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_155354 big.jpg",
+        "largeSource": "People/IMG_155354 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 60,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_6324 big.jpg",
+        "largeSource": "People/IMG_6324 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 61,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/DSC00116 big.jpg",
+        "largeSource": "People/DSC00116 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 62,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA702757 big.jpg",
+        "largeSource": "People/SA702757 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 63,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5716 big.jpg",
+        "largeSource": "People/IMG_5716 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 64,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1204 big.jpg",
+        "largeSource": "People/IMG_1204 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 65,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_6271 big.jpg",
+        "largeSource": "People/IMG_6271 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 66,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_6600 big.jpg",
+        "largeSource": "People/IMG_6600 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 68,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_1997 big.jpg",
+        "largeSource": "People/IMG_1997 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 69,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/20220514_155349 big.jpg",
+        "largeSource": "People/20220514_155349 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 71,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0662 big.jpg",
+        "largeSource": "People/IMG_0662 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 72,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA702629 big.jpg",
+        "largeSource": "People/SA702629 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 73,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7380 big.jpg",
+        "largeSource": "People/IMG_7380 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 75,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/20220514_155354 big.jpg",
+        "largeSource": "People/20220514_155354 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 76,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA700194 big.jpg",
+        "largeSource": "People/SA700194 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 77,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0502 big.jpg",
+        "largeSource": "People/IMG_0502 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 78,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5408 big.jpg",
+        "largeSource": "People/IMG_5408 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 79,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2607 big.jpg",
+        "largeSource": "People/IMG_2607 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 82,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7285.jpg",
+        "largeSource": "People/IMG_7285.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 83,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/(29 of 31) big.jpg",
+        "largeSource": "People/(29 of 31) big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 84,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_4395 big.jpg",
+        "largeSource": "People/IMG_4395 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 85,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7216 big.jpg",
+        "largeSource": "People/IMG_7216 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 86,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA703293 big.jpg",
+        "largeSource": "People/SA703293 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 88,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8750  big.jpg",
+        "largeSource": "People/IMG_8750  big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 90,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/_MG_2977 big.jpg",
+        "largeSource": "People/_MG_2977 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 91,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA703328 big.jpg",
+        "largeSource": "People/SA703328 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 92,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA701231 big.jpg",
+        "largeSource": "People/SA701231 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 93,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2455 big.jpg",
+        "largeSource": "People/IMG_2455 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 94,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7147 big.jpg",
+        "largeSource": "People/IMG_7147 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 95,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0702 big.jpg",
+        "largeSource": "People/IMG_0702 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 96,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/fg17-6610 big.jpg",
+        "largeSource": "People/fg17-6610 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 97,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8424 big.jpg",
+        "largeSource": "People/IMG_8424 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 98,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/SA700147 big.jpg",
+        "largeSource": "People/SA700147 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 99,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7595 big.jpg",
+        "largeSource": "People/IMG_7595 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 100,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0700 big.jpg",
+        "largeSource": "People/IMG_0700 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 101,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/2022-03-25 16.53.16-1 big.jpg",
+        "largeSource": "People/2022-03-25 16.53.16-1 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 102,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8380 big.jpg",
+        "largeSource": "People/IMG_8380 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 103,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_6323 big.jpg",
+        "largeSource": "People/IMG_6323 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 104,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_2500 big.jpg",
+        "largeSource": "People/IMG_2500 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 105,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8319 big.jpg",
+        "largeSource": "People/IMG_8319 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 106,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0499 big.jpg",
+        "largeSource": "People/IMG_0499 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 107,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_9090 big.jpg",
+        "largeSource": "People/IMG_9090 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 108,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8222 big-2.jpg",
+        "largeSource": "People/IMG_8222 big-2.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 109,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5342 big.jpg",
+        "largeSource": "People/IMG_5342 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 110,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_8660 big.jpg",
+        "largeSource": "People/IMG_8660 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 111,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5521 big.jpg",
+        "largeSource": "People/IMG_5521 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 112,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_143705 big.jpg",
+        "largeSource": "People/IMG_143705 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 114,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_0501 big.jpg",
+        "largeSource": "People/IMG_0501 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 115,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_5331 big.jpg",
+        "largeSource": "People/IMG_5331 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 116,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7583  big.jpg",
+        "largeSource": "People/IMG_7583  big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 117,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG_7289 big.jpg",
+        "largeSource": "People/IMG_7289 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 119,
+        "alt": "portrait",
+        "title": "",
+        "mainImage": "People/IMG 042 big.jpg",
+        "largeSource": "People/IMG 042 big.jpg",
+        "description": "",
+        "type": "photo",
+        "kind": "individual",
+        "genre": "people"
+    },
+    {
+        "id": 10000,
         "alt": "Touch Blekinge",
         "title": "Touch Blekinge",
-        "mainImage": "verazfelt/IMG_8414 small.jpg",
-        "type" : "photo",
+        "mainImage": "Stories/Verazfelt/IMG_7941 small.jpg",
+        "type": "photo",
         "kind": "project",
         "genre": "stories",
         "related": [
-            {"smallSource": "verazfelt/IMG_8135 small.jpg", "largeSource": "verazfelt/IMG_8135 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7879 small.jpg", "largeSource": "verazfelt/IMG_7879 big.jpg"},
-            {"smallSource": "verazfelt/IMG_8414 small.jpg", "largeSource": "verazfelt/IMG_8414 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7950 small.jpg", "largeSource": "verazfelt/IMG_7950 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7875 small.jpg", "largeSource": "verazfelt/IMG_7875 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7954 small.jpg", "largeSource": "verazfelt/IMG_7954 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7933 small.jpg", "largeSource": "verazfelt/IMG_7933 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7902 small.jpg", "largeSource": "verazfelt/IMG_7902 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7935 small.jpg", "largeSource": "verazfelt/IMG_7935 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7941 small.jpg", "largeSource": "verazfelt/IMG_7941 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7939 small.jpg", "largeSource": "verazfelt/IMG_7939 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7945 small.jpg", "largeSource": "verazfelt/IMG_7945 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7926 small.jpg", "largeSource": "verazfelt/IMG_7926 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7916 small.jpg", "largeSource": "verazfelt/IMG_7916 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7907 small.jpg", "largeSource": "verazfelt/IMG_7907 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7886 small.jpg", "largeSource": "verazfelt/IMG_7886 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7893 small.jpg", "largeSource": "verazfelt/IMG_7893 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7889 small.jpg", "largeSource": "verazfelt/IMG_7889 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7881 small.jpg", "largeSource": "verazfelt/IMG_7881 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7948 small.jpg", "largeSource": "verazfelt/IMG_7948 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7880 small.jpg", "largeSource": "verazfelt/IMG_7880 big.jpg"},
-            {"smallSource": "verazfelt/IMG_8373 small.jpg", "largeSource": "verazfelt/IMG_8373 big.jpg"},
-            {"smallSource": "verazfelt/IMG_8426 small.jpg", "largeSource": "verazfelt/IMG_8426 big.jpg"},
-            {"smallSource": "verazfelt/IMG_8370 small.jpg", "largeSource": "verazfelt/IMG_8370 big.jpg"},
-            {"smallSource": "verazfelt/IMG_7957 small.jpg", "largeSource": "verazfelt/IMG_7957 big.jpg"},
-            {"smallSource": "verazfelt/IMG_8401a small.jpg", "largeSource": "verazfelt/IMG_8401a big.jpg"},
-            {"smallSource": "verazfelt/IMG_8418 small.jpg", "largeSource": "verazfelt/IMG_8418 big.jpg"}
-        ],        
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8135 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8135 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7879 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7879 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8414 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8414 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7950 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7950 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7875 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7875 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7954 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7954 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7933 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7933 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7902 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7902 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7935 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7935 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7941 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7941 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7939 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7939 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7945 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7945 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7926 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7926 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7916 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7916 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7907 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7907 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7886 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7886 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7893 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7893 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7889 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7889 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7881 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7881 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7948 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7948 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7880 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7880 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8373 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8373 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8426 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8426 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8370 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8370 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_7957 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_7957 big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8401a small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8401a big.jpg"
+            },
+            {
+                "smallSource": "Stories/Verazfelt/IMG_8418 small.jpg",
+                "largeSource": "Stories/Verazfelt/IMG_8418 big.jpg"
+            }
+        ],
         "summary": "A short photo story dedicated to textile art of my old friend, Vera Zh. Gutman, a felt and textile artist living in Blekinge, Sweden. She crafts everyday items infused with a touch of fairytale magic in each piece, conveying a sense of being firmly rooted and connected to the deep beauty of Nordic nature.",
         "link": "https://www.verazfelt.se/",
         "linkDescription": "Vera's site",
