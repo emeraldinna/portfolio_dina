@@ -19,11 +19,11 @@ const SingleAnimation = () => {
             if (location.state && location.state.project) {
                 setProject(location.state.project);
                 setIsLoading(false);
-    
+
             } else {
                 const projectId = location.pathname.split('/').pop();
                 const foundProject = data.find((proj) => proj.id.toString() === projectId);
-    
+
                 if (foundProject) {
                     setProject(foundProject);
                     setIsLoading(false);
@@ -54,7 +54,7 @@ const SingleAnimation = () => {
 
     const goBackButton = (
         <Button variant='link' style={{ color: 'black', textAlign: 'left' }} onClick={handleGoBack}>
-          Go back
+            Go back
         </Button>
     );
 
@@ -72,13 +72,13 @@ const SingleAnimation = () => {
                 <Col xs={12} className='mt-4'>
                     <p style={{ textAlign: 'left' }}>{(project && project.summary)}</p>
                 </Col>
-                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{  textAlign: 'left', textDecoration: 'none' }}><p>{project.linkDescription || "Official YouTube channel"}</p></a>}
+                {project.link && <a href={project.link} target='_blank' rel='noopener noreferrer' style={{ textAlign: 'left', textDecoration: 'none' }}><p>{project.linkDescription || "Official YouTube channel"}</p></a>}
             </Row>
             <Row className='mb-4 justify-content-center'>
                 {project.videos.map((video, index) => (
                     <Col key={index} xs={12} sm={12} md={10} lg={8} xl={6} xxl={6} className='py-4'>
                         <div
-                            style={{ position: 'relative', width: '100%', height: '300px' }}
+                            style={{ position: 'relative', width: '100%', height: '370px' }}
                         >
                             <ReactPlayer
                                 url={video.url}
@@ -97,56 +97,50 @@ const SingleAnimation = () => {
                 ))}
             </Row>
             <Row className='mb-4 justify-content-center' style={{ textAlign: 'left' }}>
-                <div dangerouslySetInnerHTML={markup} className='mb-4' />
+                <div dangerouslySetInnerHTML={markup} className='mt-4 mb-4' />
                 {project['drafts-section'] && typeof project['drafts-section'] === 'object' && Object.keys(project['drafts-section']).length > 0 && (
                     <div className='mt-4'>
                         <h3 style={{ textAlign: 'center', textDecoration: 'underline', fontFamily: 'Oswald-SemiBold' }}>{project['drafts-section'].title || 'Drafts'}</h3>
-                        <p>{project['drafts-section']['general-text']}</p>
+                        <p className='mt-4'>{project['drafts-section']['general-text']}</p>
                         {project['drafts-section'] && (
-                            <div className='mt-4'>
-                                {project['drafts-section']['drafts'] && (
-                                    <div className='grid-container py-4'>
-                                        {project['drafts-section']['drafts'].map((draft, index) => {
-                                            if (draft.type === 'sketchfab') {
-                                                return (
-                                                <div key={index}>
-                                                    <div class="sketchfab-embed-wrapper">
-                                                        <iframe title={draft.title}
+                            <Row className='justify-content-center mt-4 pt-4'>
+                                {project['drafts-section']['drafts'] && project['drafts-section']['drafts'].map((draft, index) => {
+                                    // console.log("Draft:", draft);
+                                    return (
+                                        <Col key={index} xs={12} sm={12} md={10} lg={6} xl={4} xxl={4} className='mb-4'>
+                                            {draft.type === 'sketchfab' ? (
+                                                <div className="sketchfab-embed-wrapper">
+                                                    <iframe
+                                                        title={draft.title}
                                                         width='100%'
                                                         height='300px'
                                                         frameborder="0"
-                                                        allowfullscreen
                                                         mozallowfullscreen="true"
                                                         webkitallowfullscreen="true"
                                                         allow="autoplay; fullscreen; xr-spatial-tracking"
-                                                        xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
-                                                        web-share src={draft.url}>
-                                                        </iframe>
-                                                    </div>
-                                                    <h5 style={{ fontFamily: 'Oswald-Light' }}>{draft.title}</h5>
-                                                </div>)
-                                            }
-                                            else {
-                                                return (
-                                                <div key={index}>
-                                                    <ReactPlayer
-                                                        url={draft.url}
-                                                        width='100%'
-                                                        height='300px'
-                                                        controls
-                                                        loop
-                                                        muted
-                                                        volume={0.5}
-                                                        playsinline
-                                                        allowFullScreen
-                                                    />
-                                                    <h5 style={{ fontFamily: 'Oswald-Light' }}>{draft.title}</h5>
-                                                </div>)
-                                            }
-                                        })}
-                                    </div>
-                                )}
-                            </div>
+                                                        xr-spatial-tracking="execution-while-out-of-viewport execution-while-not-rendered"
+                                                        web-share="true" 
+                                                        src={draft.url}
+                                                    ></iframe>
+                                                </div>
+                                            ) : (
+                                                <ReactPlayer
+                                                    url={draft.url}
+                                                    width='100%'
+                                                    height='300px'
+                                                    controls
+                                                    loop
+                                                    muted
+                                                    volume={0.5}
+                                                    playsinline
+                                                    allowFullScreen
+                                                />
+                                            )}
+                                            <h5 style={{ fontFamily: 'Oswald-Light', textAlign: 'center' }}>{draft.title}</h5>
+                                        </Col>
+                                    );
+                                })}
+                            </Row>
                         )}
                     </div>
                 )}
