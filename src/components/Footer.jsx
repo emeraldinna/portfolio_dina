@@ -55,10 +55,10 @@ const Footer = () => {
                 <p className="fs-5 mb-2" style={{ fontFamily: 'Oswald-Semibold' }}>dina.berkgaut@gmail.com</p>
             </Row>
             <Row style={{ fontFamily: 'Oswald-Light' }}>
-                <p className="pb-1 mb-0">© Dina Berkgaut 2023. All rights reserved.</p>
+                <p className="pb-1 mb-0">© Dina Berkgaut 2023-2024. All rights reserved.</p>
             </Row>
             <Row style={{ fontFamily: 'Oswald-Light' }}>
-                <p className="pb-1 mb-0">Website created by Inna Dyachkova</p>
+                <p className="pb-1 mb-0">Website created by <a href="https://www.linkedin.com/in/inna-dyachkova/" target='_blank' rel='noopener noreferrer' style={{ textDecoration: 'none', color: '#212529', fontFamily: 'Oswald-Regular' }}>Inna Dyachkova</a></p>
             </Row>        
         </Container>
     </div>    
