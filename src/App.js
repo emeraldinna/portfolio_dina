@@ -33,6 +33,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
+        <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="00e85906-f111-41c0-94d1-897881eb8c54"></script>        
       </div>
     </BrowserRouter>
   );
