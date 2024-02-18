@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ReactGA from 'react-ga4';
+import ScrollToTop from './components/ScrollToTop';
 import MainLayout from './layouts/MainLayout';
 import Home from './components/Home';
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<Home />} />
