@@ -1,10 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ReactGA from 'react-ga4';
 import ScrollToTop from './components/ScrollToTop';
 import MainLayout from './layouts/MainLayout';
 import Home from './components/Home';
-import './App.css';
-import './custom-styles.css';
 import PhotographyByGenre from './components/PhotographyByGenre';
 import Animation from './components/Animation';
 import About from './components/About';
@@ -13,8 +10,8 @@ import NotFound from './components/NotFound';
 import Success from './components/Success';
 import SingleAnimation from './components/SingleAnimation';
 import SinglePhotoProject from './components/SinglePhotoProject';
-
-ReactGA.initialize('G-K9WEQGK8LS');
+import './App.css';
+import './custom-styles.css';
 
 function App() {
   return (
@@ -36,6 +33,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
+        <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="00e85906-f111-41c0-94d1-897881eb8c54"></script>        
       </div>
     </BrowserRouter>
   );
