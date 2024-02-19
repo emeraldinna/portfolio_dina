@@ -46,7 +46,7 @@ const SingleAnimation = () => {
         );
     }
 
-    const markup = { __html: project.description };
+    const markup = { __html: project.description.join('') };
 
     const handleGoBack = () => {
         navigate(-1);
@@ -105,7 +105,6 @@ const SingleAnimation = () => {
                         {project['drafts-section'] && (
                             <Row className='justify-content-center mt-4 pt-4'>
                                 {project['drafts-section']['drafts'] && project['drafts-section']['drafts'].map((draft, index) => {
-                                    // console.log("Draft:", draft);
                                     return (
                                         <Col key={index} xs={12} sm={12} md={10} lg={6} xl={4} xxl={4} className='mb-4'>
                                             {draft.type === 'sketchfab' ? (
