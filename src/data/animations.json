@@ -6,7 +6,14 @@
         "source": "shelter-test.png",
         "type": "game",
         "summary": "While studying at Future Games I made my internship at Might And Delight studio as a junior animator, working on  Shelter 3 game. This internship later became a work contract, during which I contributed to both Shelter 3 and a new game Meadow. I created keyframe animations for elephants and elephant babies, including a full set of emotional reactions, and animations for crocodiles and buffaloes for Shelter 3. Then, I worked on introducing elephant babies in the game Meadow. All animations were made in Motion Builder.",
-        "description": "<p>My responsibilities included: <ul><li>Keyframe animations in Motion Builder for the main characters and NPCs</li><li>Rig testing</li><li>General problem-solving during implementation in Unity</li><li>Assisting the Art Director in creating animatics</li><li>Making additional animations for the trailer<p>",
+        "description": ["<p>My responsibilities included:</p>",
+                        "<ul>",
+                        "<li>Keyframe animations in Motion Builder for the main characters and NPCs</li>",
+                        "<li>Rig testing</li>",
+                        "<li>General problem-solving during implementation in Unity</li>",
+                        "<li>Assisting the Art Director in creating animatics</li>",
+                        "<li>Making additional animations for the trailer</li>",
+                        "</ul>"],
         "link": "https://store.steampowered.com/app/977630/Shelter_3/",
         "linkDescription": "Shelter 3 on Steam",
         "videos" : [
@@ -32,11 +39,11 @@
     {
         "id": 2,
         "alt": "Moonzy TV Series",
-        "title": "Moonzy (Лунтик и его друзья)",
+        "title": "Moonzy (Лунтик и и его друзья)",
         "source": "moonzy.jpg",
         "type": "tv",
         "summary": "I began my work at Studio Melnitsa in St. Petersburg on the Moonzy project, a TV series for pre-school children, from pre-production in 2005 and until 2008. This was my first experience working in a large studio and getting acquainted with the animation production pipeline. The first seasons were produced using 2D cutout techniques in After Effects, with character design and backgrounds created in Photoshop. My responsibilities included 2D cut-out animation, character design, and pre-production tasks.",
-        "description": "",
+        "description": [],
         "link": "https://www.youtube.com/user/luntik",
         "videos": [
             { "url" : "https://youtu.be/PL8NcXYbzu0", "title" : "Dandelion my animation reel" },
@@ -51,7 +58,18 @@
         "source": "barkers.jpg",
         "type": "tv",
         "summary": "From 2010 to 2012, I was a part of the rendering team at Melnitsa Animation Studio in St. Petersburg, working on 'The Barkers,' a popular animated TV series for children. I worked as a layout artist, and later as a render artist.",
-        "description": "<p>My responsibilities included:</p><ul><li>Preparation of layouts</li><li>Draft rendering of animations for rough cut editing</li><li>Episodes cleanup together with episode director, artistic director, lead animator</li><li>Simple and complex lighting, working alongside with  lighting supervisor</li><li>Collaboration with Dynamic and Texture&nbsp;&amp;&nbsp;Background departments</li><li>Final rendering</li><li>Compositing, 2D effects</li></ul><p>Tools used: Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop, basic Nuke</p>",
+        "description": ["<p>My responsibilities included:</p>",
+                        "<ul>",
+                        "<li>Preparation of layouts</li>",
+                        "<li>Draft rendering of animations for rough cut editing</li>",
+                        "<li>Episodes cleanup together with episode director, artistic director, lead animator</li>",
+                        "<li>Simple and complex lighting, working alongside with  lighting supervisor</li>",
+                        "<li>Collaboration with Dynamic and Texture&nbsp;&amp;&nbsp;Background departments</li>",
+                        "<li>Final rendering</li>",
+                        "<li>Compositing, 2D effects</li>",
+                        "</ul>",
+                        "<p>Tools used: Autodesk Maya, Pixar Renderman, Adobe After Effects, Adobe Premiere, Adobe Photoshop, basic Nuke</p>"
+                        ],
         "link": "https://www.youtube.com/user/barboskinyonline",
         "videos": [
             { "url" : "https://youtu.be/t6KO2LH9HXs", "title" : "The Barkers" }
@@ -65,7 +83,7 @@
         "source": "huba-bubba.jpg",
         "type": "tv",
         "summary": "After studying at St. Petersburg State University of Film and Television, I embarked on my first professional animation experience as a Character Assistant on 'Hubba-bubba' commercials at Visotsky & Sikorsky Animation Studio in 2004 - 2005. This opportunity, which began as an internship and later turned into employment, introduced me to the world of good old clay animation.",
-        "description": "<p>I began my journey by manually mixing plasticine to match the exact colour required by the style guide. This meticulous work helped me overcome initial fears and build confidence. My primary duty was to sculpt and repeatedly repair plasticine characters for stop-motion animation. I learned to mould and fix the clay characters very precisely, adhering closely to the given models.</p>",
+        "description": ["<p>I began my journey by manually mixing plasticine to match the exact colour required by the style guide. This meticulous work helped me overcome initial fears and build confidence. My primary duty was to sculpt and repeatedly repair plasticine characters for stop-motion animation. I learned to mould and fix the clay characters very precisely, adhering closely to the given models.</p>"],
         "link": "",
         "videos": [
             { "url" : "https://youtu.be/zodonIou6rs", "title" : "Hubba-Bubba commercials" },
@@ -80,7 +98,7 @@
         "source": "flower-test.png",
         "type": "stop-motion",
         "summary": "Recently I have become very interested in stop-motion, a technique that lies between animation and photography. Although my experience in this animation technique is still somewhat limited, I am actively experimenting with it. Stop-motion, in my view, can be exceptionally diverse - sometimes very simple, yet other times utterly magical. I also really enjoy animating with my hands, even though it demands incredible persistence and a degree of humility. Sometimes, however, new and unexpected solutions can be born from the resistance of the material",
-        "description": "",
+        "description": [],
         "link": "",
         "videos": [
             { "url" : "https://youtu.be/v7rI-J5Qmrg", "title" : "At stop motion workshop" },
@@ -97,7 +115,7 @@
         "source": "studying animation lila.jpg",
         "type": "stop-motion",
         "summary": "",
-        "description": "",
+        "description": [],
         "link": "",
         "videos": [
             { "url" : "https://vimeo.com/showcase/8490850/video/553071805", "title" : "Walk" },
