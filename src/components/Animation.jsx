@@ -14,7 +14,7 @@ const Animation = () => {
 
   useEffect(() => {
     setIsLoading(false);
-  }, []);
+  }, [data]);
 
   const handleClick = (project) => {
     if (project) {

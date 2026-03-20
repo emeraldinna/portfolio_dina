@@ -37,7 +37,7 @@ const SinglePhotoProject = () => {
         };
 
         fetchData();
-    }, [location.state, location.pathname, navigate]);
+    }, [location.state, location.pathname, navigate, data]);
 
     if (isLoading) {
         return (

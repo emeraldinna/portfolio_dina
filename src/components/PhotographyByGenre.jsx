@@ -20,7 +20,7 @@ const PhotographyByGenre = () => {
         const filteredProjects = data.filter((project) => project.genre === genre);
         setProjects(filteredProjects);
         setIsLoading(false);
-    }, [genre]);
+    }, [genre, data]);
 
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 

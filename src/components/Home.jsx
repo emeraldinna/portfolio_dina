@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     setProjects(data);
-  }, []);
+  }, [data]);
 
   const openImageOverlay = (index) => {
     const selectedProject = projects[index];
