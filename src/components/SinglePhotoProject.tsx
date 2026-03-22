@@ -7,7 +7,7 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import PhotoOverlay from './PhotoOverlay';
 import { Fragment } from 'react';
-import data from '../data/photos.json';
+import { getPhotos } from '../data';
 import Spinner from 'react-bootstrap/Spinner';
 import { BASE_URL } from '../config';
 
@@ -19,13 +19,15 @@ const SinglePhotoProject = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const fetchData = async () => {
+        const fetchData = () => {
             if (location.state && location.state.project) {
                 setProject(location.state.project);
                 setIsLoading(false);
             } else {
+                const response = getPhotos();
+                const photos = response.success ? response.photos : []; // TODO handle error properly
                 const projectId = location.pathname.split('/').pop();
-                const foundProject = data.find((proj) => proj.id.toString() === projectId);
+                const foundProject = photos.find((proj) => proj.id.toString() === projectId);
 
                 if (foundProject && foundProject.kind === 'project') {
                     setProject(foundProject);
@@ -37,7 +39,7 @@ const SinglePhotoProject = () => {
         };
 
         fetchData();
-    }, [location.state, location.pathname, navigate, data]);
+    }, [location.state, location.pathname, navigate]);
 
     if (isLoading) {
         return (

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import data from '../data/photos.json';
+import { getPhotos } from '../data';
 import PhotoOverlay from './PhotoOverlay';
 import Spinner from 'react-bootstrap/Spinner';
 import { BASE_URL } from '../config';
@@ -17,10 +17,12 @@ const PhotographyByGenre = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const filteredProjects = data.filter((project) => project.genre === genre);
+        const response = getPhotos();
+        const photos = response.success ? response.photos : []; // TODO handle error properly
+        const filteredProjects = photos.filter((project) => project.genre === genre);
         setProjects(filteredProjects);
         setIsLoading(false);
-    }, [genre, data]);
+    }, [genre]);
 
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
@@ -77,7 +79,7 @@ const PhotographyByGenre = () => {
                 <PhotoOverlay
                     images={projects}
                     activeIndex={selectedImageIndex}
-                    setActiveIndex={setSelectedImageIndex}
+                    //setActiveIndex={setSelectedImageIndex}
                     onClose={closeImageOverlay}
                     imageFolderPath={`${BASE_URL}/images/photography-page/`}
                 />
