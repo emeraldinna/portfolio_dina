@@ -131,7 +131,7 @@ const SinglePhotoProject = () => {
                     <PhotoOverlay
                         images={project ? project.related : []}
                         activeIndex={selectedImageIndex}
-                        setActiveIndex={setSelectedImageIndex}
+                        //setActiveIndex={setSelectedImageIndex}
                         onClose={closeImageOverlay}
                         imageFolderPath={`${BASE_URL}/images/photography-page/`}
                     />
