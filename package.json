@@ -2,10 +2,8 @@
   "name": "portfolio_dina",
   "version": "0.2.0",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^14.6.1",
     "bootstrap": "^5.3.8",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.10",
@@ -16,38 +14,19 @@
     "react-player": "^2.16.1",
     "react-router-bootstrap": "^0.26.3",
     "react-router-dom": "^6.11.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^5.2.0",
     "zod": "^4.3.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-bootstrap": "^1.1.0",
     "@types/react-dom": "^18.2.0",
-    "typescript": "^5.9.3"
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.9.3",
+    "vite": "^6.3.2"
   }
 }
