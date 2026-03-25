@@ -1,23 +1,18 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Nav from 'react-bootstrap/Nav';
-import { IconContext } from 'react-icons';
-import { FaFlickr } from 'react-icons/fa';
-import { FaInstagramSquare } from 'react-icons/fa';
-import { FaVimeoSquare } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import {IconContext} from 'react-icons';
+import {FaFlickr, FaInstagramSquare, FaLinkedin, FaVimeoSquare} from 'react-icons/fa';
 
 const iconStyle = {color: "black", size: "24px"};
-const styles = {
-    marginTop: "auto",
-    position: "relative",
-    bottom: "0",
-    width: "100%"
-}
- 
 const Footer = () => {
   return (
-    <div style={styles} className="pt-5">
+    <div style={{
+        marginTop: "auto",
+        position: "relative",
+        bottom: "0",
+        width: "100%"
+    }} className="pt-5">
         <Container>
             <Row className="mb-2">
                 <Nav className="justify-content-center">

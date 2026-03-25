@@ -67,7 +67,7 @@ const Contact = () => {
                     {...field}
                     type="text"
                     placeholder="Name"
-                    isInvalid={errors.name}
+                    isInvalid={!!errors.name}
                     name="name"
                   />
                 )}
@@ -88,7 +88,7 @@ const Contact = () => {
                     {...field}
                     type="text"
                     placeholder="Email"
-                    isInvalid={errors.email}
+                    isInvalid={!!errors.email}
                     name="email"
                   />
                 )}
@@ -113,7 +113,7 @@ const Contact = () => {
                   <Form.Select
                     {...field}
                     aria-label="Select subject"
-                    isInvalid={errors.subject}
+                    isInvalid={!!errors.subject}
                     name="subject[]"
                   >
                     <option value="">Subject</option>
@@ -141,7 +141,7 @@ const Contact = () => {
                     as="textarea"
                     rows={12}
                     placeholder="Message"
-                    isInvalid={errors.message}
+                    isInvalid={!!errors.message}
                     name="message"
                   />
                 )}
