@@ -51,9 +51,6 @@ const Contact = () => {
       <h1 className="fw-bold" style={{ fontFamily: 'Oswald-SemiBold' }}>Let's get in touch</h1>
       <p className="pb-5 fs-5 text fw-semibold" style={{ fontFamily: 'Oswald-Light' }}>If you have any questions do not hesitate to contact me!</p>
       <Row className="justify-content-center">
-        <Col className="mb-5" xs={10} sm={10} md={8} lg={5} xl={4} xxl={4}>
-          <Image src={`${BASE_URL}/images/postbox.jpg`} rounded style={{ width: "80%", height: "auto", maxWidth: "100%" }} />
-        </Col>
         <Col xs={12} sm={12} md={12} lg={7} xl={6} xxl={6}>
           <Form name="contact" method="POST" noValidate onSubmit={handleSubmit(submitForm)}>
             <input type="hidden" name="form-name" value="contact" />
@@ -67,7 +64,7 @@ const Contact = () => {
                     {...field}
                     type="text"
                     placeholder="Name"
-                    isInvalid={errors.name}
+                    isInvalid={!!errors.name}
                     name="name"
                   />
                 )}
@@ -88,7 +85,7 @@ const Contact = () => {
                     {...field}
                     type="text"
                     placeholder="Email"
-                    isInvalid={errors.email}
+                    isInvalid={!!errors.email}
                     name="email"
                   />
                 )}
@@ -113,7 +110,7 @@ const Contact = () => {
                   <Form.Select
                     {...field}
                     aria-label="Select subject"
-                    isInvalid={errors.subject}
+                    isInvalid={!!errors.subject}
                     name="subject[]"
                   >
                     <option value="">Subject</option>
@@ -141,7 +138,7 @@ const Contact = () => {
                     as="textarea"
                     rows={12}
                     placeholder="Message"
-                    isInvalid={errors.message}
+                    isInvalid={!!errors.message}
                     name="message"
                   />
                 )}

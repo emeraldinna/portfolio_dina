@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ReactPlayer from 'react-player';
 import Button from 'react-bootstrap/Button';
-import data from '../data/animations.json';
+import { getAnimationWorks } from '../data';
 import Spinner from 'react-bootstrap/Spinner';
 
 const SingleAnimation = () => {
@@ -21,8 +21,11 @@ const SingleAnimation = () => {
                 setIsLoading(false);
 
             } else {
+                const response = await getAnimationWorks();
+                const animationWorks = response.success ? response.animationWorks : [];
+
                 const projectId = location.pathname.split('/').pop();
-                const foundProject = data.find((proj) => proj.id.toString() === projectId);
+                const foundProject = animationWorks.find((proj) => proj.id.toString() === projectId);
 
                 if (foundProject) {
                     setProject(foundProject);
@@ -113,9 +116,12 @@ const SingleAnimation = () => {
                                                         title={draft.title}
                                                         width='100%'
                                                         height='300px'
-                                                        frameborder="0"
-                                                        mozallowfullscreen="true"
-                                                        webkitallowfullscreen="true"
+                                                        frameBorder="0"
+                                                        // TODO: honestly, these two are deprecated about a decade ago, let's drop them!
+                                                        {...({
+                                                            mozallowfullscreen: "",
+                                                            webkitallowfullscreen: "",
+                                                        } as React.IframeHTMLAttributes<HTMLIFrameElement>)}
                                                         allow="autoplay; fullscreen; xr-spatial-tracking"
                                                         xr-spatial-tracking="execution-while-out-of-viewport execution-while-not-rendered"
                                                         web-share="true" 

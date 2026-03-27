@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import data from '../data/mainProjects.json';
+import { getMainPhotos } from '../data';
 import PhotoOverlay from './PhotoOverlay';
 import { BASE_URL } from '../config';
 
@@ -12,7 +12,9 @@ const Home = () => {
   const [projects, setProjects] = useState(null);
 
   useEffect(() => {
-    setProjects(data);
+    const response = getMainPhotos();
+    const photos = response.success ? response.photos : []; // TODO handle error properly
+    setProjects(photos);
   }, []);
 
   const openImageOverlay = (index) => {
@@ -56,7 +58,7 @@ const Home = () => {
         <PhotoOverlay
           images={projects}
           activeIndex={selectedImageIndex}
-          setActiveIndex={setSelectedImageIndex}
+          //setActiveIndex={setSelectedImageIndex}
           onClose={closeImageOverlay}
           imageFolderPath={`${BASE_URL}/images/home-page/`}
         />

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import MainLayout from './layouts/MainLayout';
 import Home from './components/Home';
@@ -24,6 +24,7 @@ function App() {
             <Route path="photography/:genre" element={<PhotographyByGenre />} />
             <Route path="photography/:genre/:id" element={<SinglePhotoProject />} />
             <Route path="photography/not-found" element={<NotFound />} />
+            <Route path="/photography/stories/10000" element={<Navigate to="/photography/stories/touch-blekinge" replace />} /> // support for old id '10000'
             <Route path="animation" element={<Animation />} />
             <Route path="animation/:id" element={<SingleAnimation />} />
             <Route path="animation/not-found" element={<NotFound />} />
